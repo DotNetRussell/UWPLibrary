@@ -1,0 +1,107 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:BasecodeLibrary.Controls"
+    xmlns:local="using:BasecodeLibrary.Themes">
+
+    <Style TargetType="controls:RateReminder">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid x:Name="ContainerGrid">
+                        <Grid.Resources>
+                            <Storyboard x:Name="PART_FadeInAnimation">
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ContainerGrid">
+                                    <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </Grid.Resources>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".30*"/>
+                            <RowDefinition Height=".40*"/>
+                            <RowDefinition Height=".30*"/>
+                        </Grid.RowDefinitions>
+
+                        <Border Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Black" Opacity=".5"/>
+
+                        <Border x:Name="PART_FeedbackMessageContainer" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height=".33*"/>
+                                    <RowDefinition Height=".33*"/>
+                                    <RowDefinition Height=".33*"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" x:Name="PART_FeedbackTitle" Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=PopupTitle}" FontSize="30" FontWeight="Bold" Padding="10"/>
+                                <TextBlock Grid.Row="1" Margin="15,5,5,5" FontSize="20" Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=PopupContent}" x:Name="PART_FeedbackContent"/>
+                                <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5,5,5,5" VerticalAlignment="Bottom">
+                                    <CheckBox x:Name="PART_StopReminding" Content="Don't Ask Again" IsChecked="False"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Button x:Name="PART_RateAppButton" Content="I love the app!" Margin="5,5,5,5" Width="200"/>
+                                        <Button x:Name="PART_HateAppButton" Content="I hate the app!" Margin="5,5,5,5" Width="200"/>
+                                        <Button x:Name="PART_CloseButton" Content="Close" Margin="5,5,5,5" Width="200"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Black" Opacity=".5"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="controls:RateReminderMobile">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid x:Name="ContainerGrid">
+                        <Grid.Resources>
+                            <Storyboard x:Name="PART_FadeInAnimation">
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ContainerGrid">
+                                    <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </Grid.Resources>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Border x:Name="PART_FeedbackMessageContainer" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height=".33*"/>
+                                        <RowDefinition Height=".33*"/>
+                                        <RowDefinition Height=".33*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" 
+                                               x:Name="PART_FeedbackTitle" TextWrapping="Wrap"
+                                               Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=PopupTitle}" 
+                                               FontSize="30" FontWeight="Bold" Padding="10"/>
+                                    <TextBlock Grid.Row="1" Margin="15,5,5,5" FontSize="20" TextWrapping="Wrap"
+                                               Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=PopupContent}" 
+                                               x:Name="PART_FeedbackContent"/>
+                                    <StackPanel Orientation="Vertical" Grid.Row="2" 
+                                                Margin="5,5,5,5" VerticalAlignment="Bottom">
+                                        <CheckBox x:Name="PART_StopReminding" Content="Don't Ask Again" 
+                                                  IsChecked="False"/>
+                                        <StackPanel Orientation="Vertical" >
+                                            <Button x:Name="PART_RateAppButton" Content="I love the app!" Margin="5,5,5,5" Width="200"/>
+                                            <Button x:Name="PART_HateAppButton" Content="I hate the app!" Margin="5,5,5,5" Width="200"/>
+                                            <Button x:Name="PART_CloseButton" Content="Close" Margin="5,5,5,5" Width="200"/>
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </Grid>
+                            </ScrollViewer>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

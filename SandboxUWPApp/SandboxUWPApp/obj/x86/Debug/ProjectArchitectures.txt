@@ -1,0 +1,2 @@
+D:\TFS\UPW Projects\UWPBasecodeLibrary\BasecodeLibrary\BasecodeLibrary\BasecodeLibrary.csproj;x86
+D:\TFS\UPW Projects\UWPBasecodeLibrary\SandboxUWPApp\SandboxUWPApp\SandboxUWPApp.csproj;x86

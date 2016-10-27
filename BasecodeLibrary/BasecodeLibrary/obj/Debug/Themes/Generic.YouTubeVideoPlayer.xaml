@@ -1,0 +1,29 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:controls="using:BasecodeLibrary.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BasecodeLibrary.Themes">
+
+    <Style TargetType="controls:YouTubeVideoPlayer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>                    
+                    <Grid x:Name="PART_ContainerGrid"
+                          HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".95*"/>
+                            <RowDefinition Height=".05*" MinHeight="50"/>
+                        </Grid.RowDefinitions>
+                        <WebView  x:Name="PART_WebViewer" Grid.Row="0" />
+                        <Button VerticalAlignment="Top" x:Name="PART_FullScreenButton" Content="Fullscreen" Grid.Row="1"/>
+                        <ProgressRing 
+                            IsActive="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=IsBusy}"  
+                            Width="100" Height="100" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
+
