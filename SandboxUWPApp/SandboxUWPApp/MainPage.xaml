@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="SandboxUWPApp.MainPage"
+    xmlns:basecodelib="using:BasecodeLibrary.Controls"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SandboxUWPApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+   
+
+    <Grid x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+            <Button Click="Button_Click">Show Popup</Button>
+            <Button Click="Button_Click_1">Leave Feedback!</Button>
+            <Button Click="Button_Click_2">Rate App</Button>
+            </StackPanel>
+            <TextBlock FontSize="50" HorizontalAlignment="Center" 
+                       Text="{Binding ElementName=filteredList, Path=SelectedContentTitle}" />
+            <TextBlock FontSize="15" HorizontalAlignment="Center" 
+                       Text="{Binding ElementName=filteredList, Path=SelectedContentImageURL}" />
+            <basecodelib:FilterableContentList 
+                x:Name="filteredList"
+                ContentItems="{Binding items}"/>
+        </StackPanel>
+        <basecodelib:PopupBase x:Name="popup" />
+        <basecodelib:FeedbackPopup x:Name="feedback" />
+        <basecodelib:RateReminder x:Name="rate" />
+
+    </Grid>
+</Page>
