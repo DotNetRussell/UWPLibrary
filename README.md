@@ -1,5 +1,4 @@
-
-UWPLibrary
+#UWPLibrary - BasecodeLibrary
 UWP Controls that I've written and open sourced
 
 This library has a ton of useful UWP controls and utilities. Almost all of the controls are lookless, meaning if you don't like how they look then you can easily restyle them without losing functionality!
@@ -19,8 +18,7 @@ All of these controls support both desktop and mobile platforms naitively curren
   <li><b>FilterableImageWrapGrid</b> - Turns the FilterableContentList into an image wrap grid that has filtering capabilities</li>
   <li><b>PopupBase</b> - This is the base popup control. This is a great starting point to create your own popups</li>
   <li><b>RateReminder</b> - Prompts the user to review the application or email you. It has cusom title and content capabilties</li>
-  <li><b>YouTubeVideoPlayer</b> - This UWP video player is made specifically to support youtube videos. It's current version supports full screen video</li>
-  <video><source src="http://i.imgur.com/is0qNFa.mp4" type="video/mp4"></video>
+  <li><b>YouTubeVideoPlayer</b> - (<a href="http://i.imgur.com/EvHpw1a.mp4">demo here</a>) This UWP video player is made specifically to support youtube videos. It's current version supports full screen video</li> 
 </ul>
 
 
