@@ -10,187 +10,197 @@ namespace BaseCodeLibrary.YouTube
 {
     internal static class YouTubeJsonParser
     {
-        public static YTChannelsRequestResults ParseChannels(string jsonData)
+        public static async Task<YTChannelsRequestResults> ParseChannels(string jsonData)
         {
-            YTChannelsRequestResults channelResults;
-
-            dynamic dynamicData = JsonConvert.DeserializeObject(jsonData);
-
-            channelResults = new YTChannelsRequestResults()
+            return await Task.Factory.StartNew(() =>
             {
-                Kind = dynamicData.kind,
-                Etag = dynamicData.etag,
-                PageInfo = new YTPageInfoModel()
-                {
-                    TotalResults = dynamicData.pageInfo.totalResults,
-                    ResultsPerPage = dynamicData.pageInfo.resultsPerPage
-                },
-                Items = new List<YTChannelModel>()
-            };
+                YTChannelsRequestResults channelResults;
+                dynamic dynamicData = JsonConvert.DeserializeObject(jsonData);
 
-            foreach (var item in dynamicData.items)
-            {
-                YTChannelModel channel = new YTChannelModel()
+                channelResults = new YTChannelsRequestResults()
                 {
-                    Kind = item.kind,
-                    Etag = item.etag,
-                    Id = item.id,
-                    ChannelDetails = new YTChannelContentDetails()
+                    Kind = dynamicData.kind,
+                    Etag = dynamicData.etag,
+                    PageInfo = new YTPageInfoModel()
                     {
-                        RelatedPlaylists = new YTRelatedPlaylistsModel()
+                        TotalResults = dynamicData.pageInfo.totalResults,
+                        ResultsPerPage = dynamicData.pageInfo.resultsPerPage
+                    },
+                    Items = new List<YTChannelModel>()
+                };
+
+                foreach (var item in dynamicData.items)
+                {
+                    YTChannelModel channel = new YTChannelModel()
+                    {
+                        Kind = item.kind,
+                        Etag = item.etag,
+                        Id = item.id,
+                        ChannelDetails = new YTChannelContentDetails()
                         {
-                            Uploads = item.contentDetails.relatedPlaylists.uploads
-                        },
-                        GooglePlusUserId = item.contentDetails.googlePlusUserId
-                    }
-                };
-                (channelResults.Items as List<YTChannelModel>).Add(channel);
-            }
+                            RelatedPlaylists = new YTRelatedPlaylistsModel()
+                            {
+                                Uploads = item.contentDetails.relatedPlaylists.uploads
+                            },
+                            GooglePlusUserId = item.contentDetails.googlePlusUserId
+                        }
+                    };
+                    (channelResults.Items as List<YTChannelModel>).Add(channel);
+                }
 
-            return channelResults;
+                return channelResults;
+            });
         }
 
-        public static YTPlaylistsRequestResults ParsePlaylists(string jsonData)
+        public static async Task<YTPlaylistsRequestResults> ParsePlaylists(string jsonData)
         {
-            YTPlaylistsRequestResults results;
-
-            dynamic dynamicData = JsonConvert.DeserializeObject(jsonData);
-
-            results = new YTPlaylistsRequestResults()
+            return await Task.Factory.StartNew(() =>
             {
-                Kind = dynamicData.kind,
-                Etag = dynamicData.etag,
-                PageInfo = new YTPageInfoModel()
+                YTPlaylistsRequestResults results;
+                dynamic dynamicData = JsonConvert.DeserializeObject(jsonData);
+
+                results = new YTPlaylistsRequestResults()
                 {
-                    TotalResults = dynamicData.pageInfo.totalResults,
-                    ResultsPerPage = dynamicData.pageInfo.resultsPerPage
-                },
-                Items = new List<YTItemModel>()
-            };
-
-            foreach (var item in dynamicData.items)
-            {
-                YTItemModel itemModel = new YTItemModel()
-                {
-                    Kind = item.kind,
-                    ETag = item.etag,
-                    Id = item.id,
-                    ContentDetails = new YTPlaylistsContentDetails() { ItemCount = item.contentDetails.itemCount }
-                };
-                results.Items.Add(itemModel);
-            }
-            return results;
-        }
-
-        public static YTPlaylistDetailsRequestResults ParsePlaylistDetails(string jsonData)
-        {
-            YTPlaylistDetailsRequestResults playlistDetails;
-
-            dynamic dynamicData = JsonConvert.DeserializeObject(jsonData);
-
-            playlistDetails = new YTPlaylistDetailsRequestResults()
-            {
-                Kind = dynamicData.kind,
-                Etag = dynamicData.etag,
-                PageInfo = new YTPageInfoModel()
-                {
-                    TotalResults = dynamicData.pageInfo.totalResults,
-                    ResultsPerPage = dynamicData.pageInfo.resultsPerPage
-                },
-                Videos = new List<YTVideoModel>()
-            };
-
-            foreach (var item in dynamicData.items)
-            {
-                YTVideoModel video = new YTVideoModel()
-                {
-                    Kind = item.kind,
-                    ETag = item.etag,
-                    VideoId = item.id,
-                    ContentDetails = new YTVideoContentDetails() { VideoId = item.contentDetails.videoId }
-                };
-                (playlistDetails.Videos as List<YTVideoModel>).Add(video);
-            }
-            return playlistDetails;
-        }
-
-        public static YTVideoDetailsRequestResults ParseVideoDetails(string jsonData)
-        {
-            YTVideoDetailsRequestResults videoDetails;
-
-            dynamic dynamicData = JsonConvert.DeserializeObject(jsonData);
-
-            videoDetails = new YTVideoDetailsRequestResults()
-            {
-                Kind = dynamicData.kind,
-                Etag = dynamicData.etag,
-                PageInfo = new YTPageInfoModel()
-                {
-                    TotalResults = dynamicData.totalResults,
-                    ResultsPerPage = dynamicData.resultsPerPage
-                },
-                Items = new List<YTVideoDetailsContentDetails>()
-            };
-
-            foreach (var item in dynamicData.items)
-            {
-                YTVideoDetailsContentDetails details = new YTVideoDetailsContentDetails()
-                {
-                    Kind = item.kind,
-                    Etag = item.etag,
-                    Id = item.id,
-                    Snippet = new YTSnipperModel()
+                    Kind = dynamicData.kind,
+                    Etag = dynamicData.etag,
+                    PageInfo = new YTPageInfoModel()
                     {
-                        PublishedAt = item.snippet.publishedAt,
-                        ChannelId = item.snippet.channelId,
-                        Title = item.snippet.title,
-                        Description = item.snippet.description,
-                        Thumbnails = new List<YTThumbnailModel>(),
-                        ChannelTitle = item.snippet.channelTitle,
-                        CategoryId = item.snippet.categoryId,
-                        LiveBroadcastContent = item.snippet.liveBroadcastContent
-                    }
+                        TotalResults = dynamicData.pageInfo.totalResults,
+                        ResultsPerPage = dynamicData.pageInfo.resultsPerPage
+                    },
+                    Items = new List<YTItemModel>()
                 };
 
-
-                YTThumbnailModel mediumThumbnail = new YTThumbnailModel()
+                foreach (var item in dynamicData.items)
                 {
-                    ThumbnailSize = YTEnums.ThumbnailSizes.medium,
-                    Url = item.snippet.thumbnails.medium.url,
-                    Width = item.snippet.thumbnails.medium.width,
-                    Height = item.snippet.thumbnails.medium.height
-                };
-                YTThumbnailModel highThumbnail = new YTThumbnailModel()
+                    YTItemModel itemModel = new YTItemModel()
+                    {
+                        Kind = item.kind,
+                        ETag = item.etag,
+                        Id = item.id,
+                        ContentDetails = new YTPlaylistsContentDetails() { ItemCount = item.contentDetails.itemCount }
+                    };
+                    results.Items.Add(itemModel);
+                }
+                return results;
+            });
+        }
+
+        public static async Task<YTPlaylistDetailsRequestResults> ParsePlaylistDetails(string jsonData)
+        {
+            return await Task.Factory.StartNew(() =>
+            {
+                YTPlaylistDetailsRequestResults playlistDetails;
+
+                dynamic dynamicData = JsonConvert.DeserializeObject(jsonData);
+
+                playlistDetails = new YTPlaylistDetailsRequestResults()
                 {
-                    ThumbnailSize = YTEnums.ThumbnailSizes.high,
-                    Url = item.snippet.thumbnails.medium.url,
-                    Width = item.snippet.thumbnails.medium.width,
-                    Height = item.snippet.thumbnails.medium.height
-                };
-                YTThumbnailModel standardThumbnail = new YTThumbnailModel()
-                {
-                    ThumbnailSize = YTEnums.ThumbnailSizes.standard,
-                    Url = item.snippet.thumbnails.medium.url,
-                    Width = item.snippet.thumbnails.medium.width,
-                    Height = item.snippet.thumbnails.medium.height
-                };
-                YTThumbnailModel maxresThumbnail = new YTThumbnailModel()
-                {
-                    ThumbnailSize = YTEnums.ThumbnailSizes.maxres,
-                    Url = item.snippet.thumbnails.medium.url,
-                    Width = item.snippet.thumbnails.medium.width,
-                    Height = item.snippet.thumbnails.medium.height
+                    Kind = dynamicData.kind,
+                    Etag = dynamicData.etag,
+                    PageInfo = new YTPageInfoModel()
+                    {
+                        TotalResults = dynamicData.pageInfo.totalResults,
+                        ResultsPerPage = dynamicData.pageInfo.resultsPerPage
+                    },
+                    Videos = new List<YTVideoModel>()
                 };
 
-                details.Snippet.Thumbnails.Add(mediumThumbnail);
-                details.Snippet.Thumbnails.Add(highThumbnail);
-                details.Snippet.Thumbnails.Add(standardThumbnail);
-                details.Snippet.Thumbnails.Add(maxresThumbnail);
+                foreach (var item in dynamicData.items)
+                {
+                    YTVideoModel video = new YTVideoModel()
+                    {
+                        Kind = item.kind,
+                        ETag = item.etag,
+                        VideoId = item.id,
+                        ContentDetails = new YTVideoContentDetails() { VideoId = item.contentDetails.videoId }
+                    };
+                    (playlistDetails.Videos as List<YTVideoModel>).Add(video);
+                }
+                return playlistDetails;
+            });
+        }
 
-                videoDetails.Items.Add(details);
-            }
+        public static async Task<YTVideoDetailsRequestResults> ParseVideoDetails(string jsonData)
+        {
+            return await Task.Factory.StartNew(() =>
+            {
+                YTVideoDetailsRequestResults videoDetails;
 
-            return videoDetails;
+                dynamic dynamicData = JsonConvert.DeserializeObject(jsonData);
+
+                videoDetails = new YTVideoDetailsRequestResults()
+                {
+                    Kind = dynamicData.kind,
+                    Etag = dynamicData.etag,
+                    PageInfo = new YTPageInfoModel()
+                    {
+                        TotalResults = dynamicData.totalResults,
+                        ResultsPerPage = dynamicData.resultsPerPage
+                    },
+                    Items = new List<YTVideoDetailsContentDetails>()
+                };
+
+                foreach (var item in dynamicData.items)
+                {
+                    YTVideoDetailsContentDetails details = new YTVideoDetailsContentDetails()
+                    {
+                        Kind = item.kind,
+                        Etag = item.etag,
+                        Id = item.id,
+                        Snippet = new YTSnipperModel()
+                        {
+                            PublishedAt = item.snippet.publishedAt,
+                            ChannelId = item.snippet.channelId,
+                            Title = item.snippet.title,
+                            Description = item.snippet.description,
+                            Thumbnails = new List<YTThumbnailModel>(),
+                            ChannelTitle = item.snippet.channelTitle,
+                            CategoryId = item.snippet.categoryId,
+                            LiveBroadcastContent = item.snippet.liveBroadcastContent
+                        }
+                    };
+
+
+                    YTThumbnailModel mediumThumbnail = new YTThumbnailModel()
+                    {
+                        ThumbnailSize = YTEnums.ThumbnailSizes.medium,
+                        Url = item.snippet.thumbnails.medium.url,
+                        Width = item.snippet.thumbnails.medium.width,
+                        Height = item.snippet.thumbnails.medium.height
+                    };
+                    YTThumbnailModel highThumbnail = new YTThumbnailModel()
+                    {
+                        ThumbnailSize = YTEnums.ThumbnailSizes.high,
+                        Url = item.snippet.thumbnails.medium.url,
+                        Width = item.snippet.thumbnails.medium.width,
+                        Height = item.snippet.thumbnails.medium.height
+                    };
+                    YTThumbnailModel standardThumbnail = new YTThumbnailModel()
+                    {
+                        ThumbnailSize = YTEnums.ThumbnailSizes.standard,
+                        Url = item.snippet.thumbnails.medium.url,
+                        Width = item.snippet.thumbnails.medium.width,
+                        Height = item.snippet.thumbnails.medium.height
+                    };
+                    YTThumbnailModel maxresThumbnail = new YTThumbnailModel()
+                    {
+                        ThumbnailSize = YTEnums.ThumbnailSizes.maxres,
+                        Url = item.snippet.thumbnails.medium.url,
+                        Width = item.snippet.thumbnails.medium.width,
+                        Height = item.snippet.thumbnails.medium.height
+                    };
+
+                    details.Snippet.Thumbnails.Add(mediumThumbnail);
+                    details.Snippet.Thumbnails.Add(highThumbnail);
+                    details.Snippet.Thumbnails.Add(standardThumbnail);
+                    details.Snippet.Thumbnails.Add(maxresThumbnail);
+
+                    videoDetails.Items.Add(details);
+                }
+
+                return videoDetails;
+            });
         }
     }
 }
