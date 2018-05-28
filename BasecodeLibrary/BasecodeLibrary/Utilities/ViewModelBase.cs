@@ -26,7 +26,7 @@ namespace BasecodeLibrary.Utilities
             {
                 CoreApplication.MainView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
                 {
-                    PropertyChanged(this, new PropertyChangedEventArgs(prop));
+                    handler(this, new PropertyChangedEventArgs(prop));
                 });
             }
         }

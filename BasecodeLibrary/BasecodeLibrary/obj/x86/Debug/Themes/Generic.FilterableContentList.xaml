@@ -46,6 +46,7 @@
                             Grid.Row="1" 
                             HorizontalAlignment="Stretch" 
                             VerticalAlignment="Stretch">
+                            
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">

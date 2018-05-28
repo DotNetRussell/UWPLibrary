@@ -6,10 +6,11 @@
     xmlns:local="using:BasecodeLibrary.Themes">
 
     <Style TargetType="controls:FilterableImageWrapGrid">
+        <Setter Property="Name" Value="PART_ImageWrapGridContainer"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
-                   
+
                     <Grid VerticalAlignment="Stretch">
                         <Grid.Resources>
                             <converters:BoolToVisibilityConverter x:Key="BoolToVisConverter"/>
@@ -19,7 +20,10 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <ProgressRing 
-                            Canvas.ZIndex="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Canvas.ZIndex="1" 
+                            Grid.Row="1" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"
                             IsActive="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=IsBusy}"  
                             Width="50" Height="50" />
 
@@ -33,50 +37,52 @@
                             ItemsSource="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=FilteredItems, Mode=TwoWay}"
                             SelectedItem="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=SelectedContentItem, Mode=TwoWay}"
                             Grid.Row="1" 
-                            HorizontalAlignment="Stretch" 
                             VerticalAlignment="Top">
+
                             <GridView.ItemContainerTransitions>
                                 <TransitionCollection>
                                     <EntranceThemeTransition  IsStaggeringEnabled="True"/>
                                     <AddDeleteThemeTransition />
-                                    <EdgeUIThemeTransition Edge="Left"/>
+                                    <EdgeUIThemeTransition Edge="Top"/>
                                 </TransitionCollection>
                             </GridView.ItemContainerTransitions>
+
                             <GridView.ItemsPanel>
                                 <ItemsPanelTemplate>
                                     <ItemsWrapGrid 
-                                        x:Name="PART_ItemsWrapGrid"                                        
-                                        Margin="2" Orientation="Horizontal" 
-                                        HorizontalAlignment="Center"/>
+                                            x:Name="PART_ItemsWrapGrid"     
+                                            ItemHeight="150"
+                                            ItemWidth="280"
+                                            Margin="2" Orientation="Horizontal" />
                                 </ItemsPanelTemplate>
                             </GridView.ItemsPanel>
+
                             <GridView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid 
-                                        Background="White" 
                                         BorderBrush="Black" 
                                         BorderThickness="2">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height=".5*" />
                                             <RowDefinition Height=".5*" />
-                                        </Grid.RowDefinitions>                                        
-                                        <Image  
+                                        </Grid.RowDefinitions>
+                                        <Image                      
+                                            Height="150" Width="280"
                                             Grid.Row="0" Grid.RowSpan="2"
                                             VerticalAlignment="Top" 
-                                            Source="{Binding ImageURI}" 
-                                            Height="150"/>
+                                            Source="{Binding ImageURI}" />
                                         <Grid Grid.Row="1" VerticalAlignment="Bottom">
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="*" />
                                             </Grid.RowDefinitions>
-                                                <Border
+                                            <Border
                                                     Opacity=".4"
                                                     Background="Black" />
-                                                <TextBlock 
+                                            <TextBlock 
                                                     VerticalAlignment="Bottom" Canvas.ZIndex="2"
                                                     FontWeight="Bold" Foreground="White" 
                                                     Text="{Binding ContentTitle}" MaxWidth="300"
-                                                    FontSize="16" TextWrapping="Wrap" />    
+                                                    FontSize="16" TextWrapping="Wrap" />
                                         </Grid>
                                     </Grid>
                                 </DataTemplate>

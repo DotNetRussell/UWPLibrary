@@ -133,47 +133,97 @@ namespace BasecodeLibrary.BasecodeLibrary_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[19];
+            _typeNameTable = new string[44];
             _typeNameTable[0] = "BasecodeLibrary.Controls.BaseCodePageContainer";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.UIElement";
             _typeNameTable[3] = "Boolean";
-            _typeNameTable[4] = "BasecodeLibrary.Controls.FilterableContentListPanel";
-            _typeNameTable[5] = "BasecodeLibrary.Controls.FilterableContentList";
+            _typeNameTable[4] = "BasecodeLibrary.Controls.FeedbackPopup";
+            _typeNameTable[5] = "BasecodeLibrary.Controls.PopupBase";
             _typeNameTable[6] = "BasecodeLibrary.Controls.ControlContainer";
             _typeNameTable[7] = "Windows.UI.Xaml.Controls.Control";
             _typeNameTable[8] = "String";
-            _typeNameTable[9] = "System.Collections.ObjectModel.ObservableCollection`1<BasecodeLibrary.Controls.FilterableContentListItem>";
-            _typeNameTable[10] = "System.Collections.ObjectModel.Collection`1<BasecodeLibrary.Controls.FilterableContentListItem>";
-            _typeNameTable[11] = "Object";
-            _typeNameTable[12] = "BasecodeLibrary.Controls.FilterableContentListItem";
-            _typeNameTable[13] = "System.Uri";
-            _typeNameTable[14] = "Windows.Foundation.Point";
-            _typeNameTable[15] = "Int32";
-            _typeNameTable[16] = "BasecodeLibrary.Controls.FilterableImageWrapGrid";
-            _typeNameTable[17] = "BasecodeLibrary.Converters.BoolToVisibilityConverter";
-            _typeNameTable[18] = "BasecodeLibrary.Controls.YouTubeVideoPlayer";
+            _typeNameTable[9] = "BasecodeLibrary.Controls.FeedbackPopupMobile";
+            _typeNameTable[10] = "BasecodeLibrary.Controls.FilterableContentListPanel";
+            _typeNameTable[11] = "BasecodeLibrary.Controls.FilterableContentList";
+            _typeNameTable[12] = "System.Collections.ObjectModel.ObservableCollection`1<BasecodeLibrary.Controls.FilterableContentListItem>";
+            _typeNameTable[13] = "System.Collections.ObjectModel.Collection`1<BasecodeLibrary.Controls.FilterableContentListItem>";
+            _typeNameTable[14] = "Object";
+            _typeNameTable[15] = "BasecodeLibrary.Controls.FilterableContentListItem";
+            _typeNameTable[16] = "System.Uri";
+            _typeNameTable[17] = "Windows.Foundation.Point";
+            _typeNameTable[18] = "Int32";
+            _typeNameTable[19] = "BasecodeLibrary.Controls.FilterableImageWrapGrid";
+            _typeNameTable[20] = "BasecodeLibrary.Converters.BoolToVisibilityConverter";
+            _typeNameTable[21] = "BasecodeLibrary.Controls.RateReminder";
+            _typeNameTable[22] = "BasecodeLibrary.Controls.RateReminderMobile";
+            _typeNameTable[23] = "BasecodeLibrary.Controls.YouTubeVideoPlayer";
+            _typeNameTable[24] = "Microsoft.Xaml.Interactions.Media.ControlStoryboardAction";
+            _typeNameTable[25] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[26] = "Microsoft.Xaml.Interactions.Media.ControlStoryboardOption";
+            _typeNameTable[27] = "System.Enum";
+            _typeNameTable[28] = "System.ValueType";
+            _typeNameTable[29] = "Windows.UI.Xaml.Media.Animation.Storyboard";
+            _typeNameTable[30] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[31] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[32] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[33] = "Microsoft.Xaml.Interactions.Core.GoToStateAction";
+            _typeNameTable[34] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[35] = "Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior";
+            _typeNameTable[36] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[37] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[38] = "System.Windows.Input.ICommand";
+            _typeNameTable[39] = "Microsoft.Xaml.Interactions.Core.NavigateToPageAction";
+            _typeNameTable[40] = "Microsoft.Xaml.Interactions.Media.PlaySoundAction";
+            _typeNameTable[41] = "Double";
+            _typeNameTable[42] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[43] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
 
-            _typeTable = new global::System.Type[19];
+            _typeTable = new global::System.Type[44];
             _typeTable[0] = typeof(global::BasecodeLibrary.Controls.BaseCodePageContainer);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.UIElement);
             _typeTable[3] = typeof(global::System.Boolean);
-            _typeTable[4] = typeof(global::BasecodeLibrary.Controls.FilterableContentListPanel);
-            _typeTable[5] = typeof(global::BasecodeLibrary.Controls.FilterableContentList);
+            _typeTable[4] = typeof(global::BasecodeLibrary.Controls.FeedbackPopup);
+            _typeTable[5] = typeof(global::BasecodeLibrary.Controls.PopupBase);
             _typeTable[6] = typeof(global::BasecodeLibrary.Controls.ControlContainer);
             _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Control);
             _typeTable[8] = typeof(global::System.String);
-            _typeTable[9] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::BasecodeLibrary.Controls.FilterableContentListItem>);
-            _typeTable[10] = typeof(global::System.Collections.ObjectModel.Collection<global::BasecodeLibrary.Controls.FilterableContentListItem>);
-            _typeTable[11] = typeof(global::System.Object);
-            _typeTable[12] = typeof(global::BasecodeLibrary.Controls.FilterableContentListItem);
-            _typeTable[13] = typeof(global::System.Uri);
-            _typeTable[14] = typeof(global::Windows.Foundation.Point);
-            _typeTable[15] = typeof(global::System.Int32);
-            _typeTable[16] = typeof(global::BasecodeLibrary.Controls.FilterableImageWrapGrid);
-            _typeTable[17] = typeof(global::BasecodeLibrary.Converters.BoolToVisibilityConverter);
-            _typeTable[18] = typeof(global::BasecodeLibrary.Controls.YouTubeVideoPlayer);
+            _typeTable[9] = typeof(global::BasecodeLibrary.Controls.FeedbackPopupMobile);
+            _typeTable[10] = typeof(global::BasecodeLibrary.Controls.FilterableContentListPanel);
+            _typeTable[11] = typeof(global::BasecodeLibrary.Controls.FilterableContentList);
+            _typeTable[12] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::BasecodeLibrary.Controls.FilterableContentListItem>);
+            _typeTable[13] = typeof(global::System.Collections.ObjectModel.Collection<global::BasecodeLibrary.Controls.FilterableContentListItem>);
+            _typeTable[14] = typeof(global::System.Object);
+            _typeTable[15] = typeof(global::BasecodeLibrary.Controls.FilterableContentListItem);
+            _typeTable[16] = typeof(global::System.Uri);
+            _typeTable[17] = typeof(global::Windows.Foundation.Point);
+            _typeTable[18] = typeof(global::System.Int32);
+            _typeTable[19] = typeof(global::BasecodeLibrary.Controls.FilterableImageWrapGrid);
+            _typeTable[20] = typeof(global::BasecodeLibrary.Converters.BoolToVisibilityConverter);
+            _typeTable[21] = typeof(global::BasecodeLibrary.Controls.RateReminder);
+            _typeTable[22] = typeof(global::BasecodeLibrary.Controls.RateReminderMobile);
+            _typeTable[23] = typeof(global::BasecodeLibrary.Controls.YouTubeVideoPlayer);
+            _typeTable[24] = typeof(global::Microsoft.Xaml.Interactions.Media.ControlStoryboardAction);
+            _typeTable[25] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[26] = typeof(global::Microsoft.Xaml.Interactions.Media.ControlStoryboardOption);
+            _typeTable[27] = typeof(global::System.Enum);
+            _typeTable[28] = typeof(global::System.ValueType);
+            _typeTable[29] = typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard);
+            _typeTable[30] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[31] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[32] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[33] = typeof(global::Microsoft.Xaml.Interactions.Core.GoToStateAction);
+            _typeTable[34] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[35] = typeof(global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior);
+            _typeTable[36] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[37] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[38] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[39] = typeof(global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction);
+            _typeTable[40] = typeof(global::Microsoft.Xaml.Interactions.Media.PlaySoundAction);
+            _typeTable[41] = typeof(global::System.Double);
+            _typeTable[42] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[43] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -209,25 +259,51 @@ namespace BasecodeLibrary.BasecodeLibrary_XamlTypeInfo
         }
 
         private object Activate_0_BaseCodePageContainer() { return new global::BasecodeLibrary.Controls.BaseCodePageContainer(); }
-        private object Activate_4_FilterableContentListPanel() { return new global::BasecodeLibrary.Controls.FilterableContentListPanel(); }
-        private object Activate_5_FilterableContentList() { return new global::BasecodeLibrary.Controls.FilterableContentList(); }
+        private object Activate_4_FeedbackPopup() { return new global::BasecodeLibrary.Controls.FeedbackPopup(); }
+        private object Activate_5_PopupBase() { return new global::BasecodeLibrary.Controls.PopupBase(); }
         private object Activate_6_ControlContainer() { return new global::BasecodeLibrary.Controls.ControlContainer(); }
-        private object Activate_9_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::BasecodeLibrary.Controls.FilterableContentListItem>(); }
-        private object Activate_10_Collection() { return new global::System.Collections.ObjectModel.Collection<global::BasecodeLibrary.Controls.FilterableContentListItem>(); }
-        private object Activate_12_FilterableContentListItem() { return new global::BasecodeLibrary.Controls.FilterableContentListItem(); }
-        private object Activate_16_FilterableImageWrapGrid() { return new global::BasecodeLibrary.Controls.FilterableImageWrapGrid(); }
-        private object Activate_17_BoolToVisibilityConverter() { return new global::BasecodeLibrary.Converters.BoolToVisibilityConverter(); }
-        private object Activate_18_YouTubeVideoPlayer() { return new global::BasecodeLibrary.Controls.YouTubeVideoPlayer(); }
-        private void VectorAdd_9_ObservableCollection(object instance, object item)
+        private object Activate_9_FeedbackPopupMobile() { return new global::BasecodeLibrary.Controls.FeedbackPopupMobile(); }
+        private object Activate_10_FilterableContentListPanel() { return new global::BasecodeLibrary.Controls.FilterableContentListPanel(); }
+        private object Activate_11_FilterableContentList() { return new global::BasecodeLibrary.Controls.FilterableContentList(); }
+        private object Activate_12_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::BasecodeLibrary.Controls.FilterableContentListItem>(); }
+        private object Activate_13_Collection() { return new global::System.Collections.ObjectModel.Collection<global::BasecodeLibrary.Controls.FilterableContentListItem>(); }
+        private object Activate_15_FilterableContentListItem() { return new global::BasecodeLibrary.Controls.FilterableContentListItem(); }
+        private object Activate_19_FilterableImageWrapGrid() { return new global::BasecodeLibrary.Controls.FilterableImageWrapGrid(); }
+        private object Activate_20_BoolToVisibilityConverter() { return new global::BasecodeLibrary.Converters.BoolToVisibilityConverter(); }
+        private object Activate_21_RateReminder() { return new global::BasecodeLibrary.Controls.RateReminder(); }
+        private object Activate_22_RateReminderMobile() { return new global::BasecodeLibrary.Controls.RateReminderMobile(); }
+        private object Activate_23_YouTubeVideoPlayer() { return new global::BasecodeLibrary.Controls.YouTubeVideoPlayer(); }
+        private object Activate_24_ControlStoryboardAction() { return new global::Microsoft.Xaml.Interactions.Media.ControlStoryboardAction(); }
+        private object Activate_30_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_31_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_33_GoToStateAction() { return new global::Microsoft.Xaml.Interactions.Core.GoToStateAction(); }
+        private object Activate_35_IncrementalUpdateBehavior() { return new global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior(); }
+        private object Activate_36_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_39_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
+        private object Activate_40_PlaySoundAction() { return new global::Microsoft.Xaml.Interactions.Media.PlaySoundAction(); }
+        private object Activate_43_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private void VectorAdd_12_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::BasecodeLibrary.Controls.FilterableContentListItem>)instance;
             var newItem = (global::BasecodeLibrary.Controls.FilterableContentListItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_10_Collection(object instance, object item)
+        private void VectorAdd_13_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::BasecodeLibrary.Controls.FilterableContentListItem>)instance;
             var newItem = (global::BasecodeLibrary.Controls.FilterableContentListItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_31_ActionCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
+            var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_43_BehaviorCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
+            var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
 
@@ -263,35 +339,20 @@ namespace BasecodeLibrary.BasecodeLibrary_XamlTypeInfo
                 xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  BasecodeLibrary.Controls.FilterableContentListPanel
-                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList"));
-                userType.Activator = Activate_4_FilterableContentListPanel;
+            case 4:   //  BasecodeLibrary.Controls.FeedbackPopup
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.PopupBase"));
+                userType.Activator = Activate_4_FeedbackPopup;
                 userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
-                userType.AddMemberName("IsCollapsed");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  BasecodeLibrary.Controls.FilterableContentList
+            case 5:   //  BasecodeLibrary.Controls.PopupBase
                 userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.ControlContainer"));
-                userType.Activator = Activate_5_FilterableContentList;
+                userType.Activator = Activate_5_PopupBase;
                 userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
-                userType.AddMemberName("FilterText");
-                userType.AddMemberName("FilteredItems");
-                userType.AddMemberName("ContentItems");
-                userType.AddMemberName("SelectedContentItem");
-                userType.AddMemberName("SelectedContentObject");
-                userType.AddMemberName("SelectedContentTitle");
-                userType.AddMemberName("SelectedContentShortDescription");
-                userType.AddMemberName("SelectedContentDescription");
-                userType.AddMemberName("SelectedContentImageURL");
-                userType.AddMemberName("SelectedContentImageDimensions");
-                userType.AddMemberName("IsReadOnly");
-                userType.AddMemberName("Count");
-                userType.AddMemberName("FilteredCount");
-                userType.AddMemberName("IsSynchronized");
-                userType.AddMemberName("SyncRoot");
-                userType.AddMemberName("IsFixedSize");
+                userType.AddMemberName("PopupTitle");
+                userType.AddMemberName("PopupContent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -314,27 +375,68 @@ namespace BasecodeLibrary.BasecodeLibrary_XamlTypeInfo
                 xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  System.Collections.ObjectModel.ObservableCollection`1<BasecodeLibrary.Controls.FilterableContentListItem>
+            case 9:   //  BasecodeLibrary.Controls.FeedbackPopupMobile
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.FeedbackPopup"));
+                userType.Activator = Activate_9_FeedbackPopupMobile;
+                userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  BasecodeLibrary.Controls.FilterableContentListPanel
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList"));
+                userType.Activator = Activate_10_FilterableContentListPanel;
+                userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
+                userType.AddMemberName("IsCollapsed");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  BasecodeLibrary.Controls.FilterableContentList
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.ControlContainer"));
+                userType.Activator = Activate_11_FilterableContentList;
+                userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
+                userType.AddMemberName("FilterText");
+                userType.AddMemberName("FilteredItems");
+                userType.AddMemberName("ContentItems");
+                userType.AddMemberName("SelectedContentItem");
+                userType.AddMemberName("SelectedContentObject");
+                userType.AddMemberName("SelectedContentTitle");
+                userType.AddMemberName("SelectedContentShortDescription");
+                userType.AddMemberName("SelectedContentDescription");
+                userType.AddMemberName("SelectedContentImageURL");
+                userType.AddMemberName("SelectedContentImageDimensions");
+                userType.AddMemberName("IsReadOnly");
+                userType.AddMemberName("Count");
+                userType.AddMemberName("FilteredCount");
+                userType.AddMemberName("IsSynchronized");
+                userType.AddMemberName("SyncRoot");
+                userType.AddMemberName("IsFixedSize");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  System.Collections.ObjectModel.ObservableCollection`1<BasecodeLibrary.Controls.FilterableContentListItem>
                 userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<BasecodeLibrary.Controls.FilterableContentListItem>"));
-                userType.CollectionAdd = VectorAdd_9_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_12_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 10:   //  System.Collections.ObjectModel.Collection`1<BasecodeLibrary.Controls.FilterableContentListItem>
+            case 13:   //  System.Collections.ObjectModel.Collection`1<BasecodeLibrary.Controls.FilterableContentListItem>
                 userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_10_Collection;
-                userType.CollectionAdd = VectorAdd_10_Collection;
+                userType.Activator = Activate_13_Collection;
+                userType.CollectionAdd = VectorAdd_13_Collection;
                 xamlType = userType;
                 break;
 
-            case 11:   //  Object
+            case 14:   //  Object
                 xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  BasecodeLibrary.Controls.FilterableContentListItem
+            case 15:   //  BasecodeLibrary.Controls.FilterableContentListItem
                 userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_12_FilterableContentListItem;
+                userType.Activator = Activate_15_FilterableContentListItem;
                 userType.SetContentPropertyName("BasecodeLibrary.Controls.FilterableContentListItem.DataObject");
                 userType.AddMemberName("DataObject");
                 userType.AddMemberName("ContentTitle");
@@ -347,43 +449,202 @@ namespace BasecodeLibrary.BasecodeLibrary_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 13:   //  System.Uri
+            case 16:   //  System.Uri
                 userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Windows.Foundation.Point
+            case 17:   //  Windows.Foundation.Point
                 xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 15:   //  Int32
+            case 18:   //  Int32
                 xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  BasecodeLibrary.Controls.FilterableImageWrapGrid
+            case 19:   //  BasecodeLibrary.Controls.FilterableImageWrapGrid
                 userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList"));
-                userType.Activator = Activate_16_FilterableImageWrapGrid;
+                userType.Activator = Activate_19_FilterableImageWrapGrid;
                 userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  BasecodeLibrary.Converters.BoolToVisibilityConverter
+            case 20:   //  BasecodeLibrary.Converters.BoolToVisibilityConverter
                 userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_17_BoolToVisibilityConverter;
+                userType.Activator = Activate_20_BoolToVisibilityConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  BasecodeLibrary.Controls.YouTubeVideoPlayer
+            case 21:   //  BasecodeLibrary.Controls.RateReminder
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.PopupBase"));
+                userType.Activator = Activate_21_RateReminder;
+                userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
+                userType.AddMemberName("ReminderTrigger");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 22:   //  BasecodeLibrary.Controls.RateReminderMobile
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.RateReminder"));
+                userType.Activator = Activate_22_RateReminderMobile;
+                userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 23:   //  BasecodeLibrary.Controls.YouTubeVideoPlayer
                 userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BasecodeLibrary.Controls.ControlContainer"));
-                userType.Activator = Activate_18_YouTubeVideoPlayer;
+                userType.Activator = Activate_23_YouTubeVideoPlayer;
                 userType.SetContentPropertyName("BasecodeLibrary.Controls.ControlContainer.ControlContent");
                 userType.AddMemberName("PlayerHeight");
                 userType.AddMemberName("PlayerWidth");
                 userType.AddMemberName("YouTubeSource");
                 userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  Microsoft.Xaml.Interactions.Media.ControlStoryboardAction
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_24_ControlStoryboardAction;
+                userType.AddMemberName("ControlStoryboardOption");
+                userType.AddMemberName("Storyboard");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 25:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 26:   //  Microsoft.Xaml.Interactions.Media.ControlStoryboardOption
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Play", global::Microsoft.Xaml.Interactions.Media.ControlStoryboardOption.Play);
+                userType.AddEnumValue("Stop", global::Microsoft.Xaml.Interactions.Media.ControlStoryboardOption.Stop);
+                userType.AddEnumValue("TogglePlayPause", global::Microsoft.Xaml.Interactions.Media.ControlStoryboardOption.TogglePlayPause);
+                userType.AddEnumValue("Pause", global::Microsoft.Xaml.Interactions.Media.ControlStoryboardOption.Pause);
+                userType.AddEnumValue("Resume", global::Microsoft.Xaml.Interactions.Media.ControlStoryboardOption.Resume);
+                userType.AddEnumValue("SkipToFill", global::Microsoft.Xaml.Interactions.Media.ControlStoryboardOption.SkipToFill);
+                xamlType = userType;
+                break;
+
+            case 27:   //  System.Enum
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 28:   //  System.ValueType
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 29:   //  Windows.UI.Xaml.Media.Animation.Storyboard
+                xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 30:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_30_EventTriggerBehavior;
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
+                userType.AddMemberName("Actions");
+                userType.AddMemberName("EventName");
+                userType.AddMemberName("SourceObject");
+                userType.AddMemberName("AssociatedObject");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 31:   //  Microsoft.Xaml.Interactivity.ActionCollection
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
+                userType.CollectionAdd = VectorAdd_31_ActionCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 32:   //  Windows.UI.Xaml.DependencyObjectCollection
+                xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 33:   //  Microsoft.Xaml.Interactions.Core.GoToStateAction
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_33_GoToStateAction;
+                userType.AddMemberName("UseTransitions");
+                userType.AddMemberName("StateName");
+                userType.AddMemberName("TargetObject");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 34:   //  Windows.UI.Xaml.FrameworkElement
+                xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 35:   //  Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_35_IncrementalUpdateBehavior;
+                userType.AddMemberName("Phase");
+                userType.AddMemberName("AssociatedObject");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 36:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_36_InvokeCommandAction;
+                userType.AddMemberName("InputConverterLanguage");
+                userType.AddMemberName("InputConverterParameter");
+                userType.AddMemberName("InputConverter");
+                userType.AddMemberName("CommandParameter");
+                userType.AddMemberName("Command");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 37:   //  Windows.UI.Xaml.Data.IValueConverter
+                xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 38:   //  System.Windows.Input.ICommand
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 39:   //  Microsoft.Xaml.Interactions.Core.NavigateToPageAction
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_39_NavigateToPageAction;
+                userType.AddMemberName("TargetPage");
+                userType.AddMemberName("Parameter");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 40:   //  Microsoft.Xaml.Interactions.Media.PlaySoundAction
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_40_PlaySoundAction;
+                userType.AddMemberName("Volume");
+                userType.AddMemberName("Source");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 41:   //  Double
+                xamlType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 42:   //  Microsoft.Xaml.Interactivity.Interaction
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("Behaviors");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 43:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+                userType = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
+                userType.CollectionAdd = VectorAdd_43_BehaviorCollection;
+                userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
             }
@@ -416,210 +677,433 @@ namespace BasecodeLibrary.BasecodeLibrary_XamlTypeInfo
             var that = (global::BasecodeLibrary.Controls.ControlContainer)instance;
             that.ControlContent = (global::Windows.UI.Xaml.UIElement)Value;
         }
-        private object get_3_FilterableContentListPanel_IsCollapsed(object instance)
+        private object get_3_PopupBase_PopupTitle(object instance)
         {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListPanel)instance;
-            return that.IsCollapsed;
+            var that = (global::BasecodeLibrary.Controls.PopupBase)instance;
+            return that.PopupTitle;
         }
-        private object get_4_FilterableContentList_FilterText(object instance)
+        private void set_3_PopupBase_PopupTitle(object instance, object Value)
         {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.FilterText;
+            var that = (global::BasecodeLibrary.Controls.PopupBase)instance;
+            that.PopupTitle = (global::System.String)Value;
         }
-        private void set_4_FilterableContentList_FilterText(object instance, object Value)
+        private object get_4_PopupBase_PopupContent(object instance)
         {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            that.FilterText = (global::System.String)Value;
+            var that = (global::BasecodeLibrary.Controls.PopupBase)instance;
+            return that.PopupContent;
         }
-        private object get_5_FilterableContentList_FilteredItems(object instance)
+        private void set_4_PopupBase_PopupContent(object instance, object Value)
         {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.FilteredItems;
+            var that = (global::BasecodeLibrary.Controls.PopupBase)instance;
+            that.PopupContent = (global::System.String)Value;
         }
-        private object get_6_FilterableContentListItem_DataObject(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            return that.DataObject;
-        }
-        private void set_6_FilterableContentListItem_DataObject(object instance, object Value)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            that.DataObject = (global::System.Object)Value;
-        }
-        private object get_7_FilterableContentListItem_ContentTitle(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            return that.ContentTitle;
-        }
-        private void set_7_FilterableContentListItem_ContentTitle(object instance, object Value)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            that.ContentTitle = (global::System.String)Value;
-        }
-        private object get_8_FilterableContentListItem_ContentShortDescription(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            return that.ContentShortDescription;
-        }
-        private void set_8_FilterableContentListItem_ContentShortDescription(object instance, object Value)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            that.ContentShortDescription = (global::System.String)Value;
-        }
-        private object get_9_FilterableContentListItem_ImageURI(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            return that.ImageURI;
-        }
-        private void set_9_FilterableContentListItem_ImageURI(object instance, object Value)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            that.ImageURI = (global::System.Uri)Value;
-        }
-        private object get_10_FilterableContentListItem_ImageDimensions(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            return that.ImageDimensions;
-        }
-        private void set_10_FilterableContentListItem_ImageDimensions(object instance, object Value)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            that.ImageDimensions = (global::Windows.Foundation.Point)Value;
-        }
-        private object get_11_FilterableContentListItem_HasDetails(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            return that.HasDetails;
-        }
-        private object get_12_FilterableContentListItem_Details(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            return that.Details;
-        }
-        private void set_12_FilterableContentListItem_Details(object instance, object Value)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
-            that.Details = (global::System.String)Value;
-        }
-        private object get_13_FilterableContentList_ContentItems(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.ContentItems;
-        }
-        private void set_13_FilterableContentList_ContentItems(object instance, object Value)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            that.ContentItems = (global::System.Collections.ObjectModel.ObservableCollection<global::BasecodeLibrary.Controls.FilterableContentListItem>)Value;
-        }
-        private object get_14_FilterableContentList_SelectedContentItem(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.SelectedContentItem;
-        }
-        private void set_14_FilterableContentList_SelectedContentItem(object instance, object Value)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            that.SelectedContentItem = (global::BasecodeLibrary.Controls.FilterableContentListItem)Value;
-        }
-        private object get_15_FilterableContentList_SelectedContentObject(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.SelectedContentObject;
-        }
-        private object get_16_FilterableContentList_SelectedContentTitle(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.SelectedContentTitle;
-        }
-        private object get_17_FilterableContentList_SelectedContentShortDescription(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.SelectedContentShortDescription;
-        }
-        private object get_18_FilterableContentList_SelectedContentDescription(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.SelectedContentDescription;
-        }
-        private object get_19_FilterableContentList_SelectedContentImageURL(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.SelectedContentImageURL;
-        }
-        private object get_20_FilterableContentList_SelectedContentImageDimensions(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.SelectedContentImageDimensions;
-        }
-        private object get_21_FilterableContentList_IsReadOnly(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.IsReadOnly;
-        }
-        private object get_22_FilterableContentList_Count(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.Count;
-        }
-        private object get_23_FilterableContentList_FilteredCount(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.FilteredCount;
-        }
-        private object get_24_FilterableContentList_IsSynchronized(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.IsSynchronized;
-        }
-        private object get_25_FilterableContentList_SyncRoot(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.SyncRoot;
-        }
-        private object get_26_FilterableContentList_IsFixedSize(object instance)
-        {
-            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
-            return that.IsFixedSize;
-        }
-        private object get_27_ControlContainer_IsBusy(object instance)
+        private object get_5_ControlContainer_IsBusy(object instance)
         {
             var that = (global::BasecodeLibrary.Controls.ControlContainer)instance;
             return that.IsBusy;
         }
-        private void set_27_ControlContainer_IsBusy(object instance, object Value)
+        private void set_5_ControlContainer_IsBusy(object instance, object Value)
         {
             var that = (global::BasecodeLibrary.Controls.ControlContainer)instance;
             that.IsBusy = (global::System.Boolean)Value;
         }
-        private object get_28_YouTubeVideoPlayer_PlayerHeight(object instance)
+        private object get_6_FilterableContentListPanel_IsCollapsed(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListPanel)instance;
+            return that.IsCollapsed;
+        }
+        private object get_7_FilterableContentList_FilterText(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.FilterText;
+        }
+        private void set_7_FilterableContentList_FilterText(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            that.FilterText = (global::System.String)Value;
+        }
+        private object get_8_FilterableContentList_FilteredItems(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.FilteredItems;
+        }
+        private object get_9_FilterableContentListItem_DataObject(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            return that.DataObject;
+        }
+        private void set_9_FilterableContentListItem_DataObject(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            that.DataObject = (global::System.Object)Value;
+        }
+        private object get_10_FilterableContentListItem_ContentTitle(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            return that.ContentTitle;
+        }
+        private void set_10_FilterableContentListItem_ContentTitle(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            that.ContentTitle = (global::System.String)Value;
+        }
+        private object get_11_FilterableContentListItem_ContentShortDescription(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            return that.ContentShortDescription;
+        }
+        private void set_11_FilterableContentListItem_ContentShortDescription(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            that.ContentShortDescription = (global::System.String)Value;
+        }
+        private object get_12_FilterableContentListItem_ImageURI(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            return that.ImageURI;
+        }
+        private void set_12_FilterableContentListItem_ImageURI(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            that.ImageURI = (global::System.Uri)Value;
+        }
+        private object get_13_FilterableContentListItem_ImageDimensions(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            return that.ImageDimensions;
+        }
+        private void set_13_FilterableContentListItem_ImageDimensions(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            that.ImageDimensions = (global::Windows.Foundation.Point)Value;
+        }
+        private object get_14_FilterableContentListItem_HasDetails(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            return that.HasDetails;
+        }
+        private object get_15_FilterableContentListItem_Details(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            return that.Details;
+        }
+        private void set_15_FilterableContentListItem_Details(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentListItem)instance;
+            that.Details = (global::System.String)Value;
+        }
+        private object get_16_FilterableContentList_ContentItems(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.ContentItems;
+        }
+        private void set_16_FilterableContentList_ContentItems(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            that.ContentItems = (global::System.Collections.ObjectModel.ObservableCollection<global::BasecodeLibrary.Controls.FilterableContentListItem>)Value;
+        }
+        private object get_17_FilterableContentList_SelectedContentItem(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.SelectedContentItem;
+        }
+        private void set_17_FilterableContentList_SelectedContentItem(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            that.SelectedContentItem = (global::BasecodeLibrary.Controls.FilterableContentListItem)Value;
+        }
+        private object get_18_FilterableContentList_SelectedContentObject(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.SelectedContentObject;
+        }
+        private object get_19_FilterableContentList_SelectedContentTitle(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.SelectedContentTitle;
+        }
+        private object get_20_FilterableContentList_SelectedContentShortDescription(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.SelectedContentShortDescription;
+        }
+        private object get_21_FilterableContentList_SelectedContentDescription(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.SelectedContentDescription;
+        }
+        private object get_22_FilterableContentList_SelectedContentImageURL(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.SelectedContentImageURL;
+        }
+        private object get_23_FilterableContentList_SelectedContentImageDimensions(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.SelectedContentImageDimensions;
+        }
+        private object get_24_FilterableContentList_IsReadOnly(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.IsReadOnly;
+        }
+        private object get_25_FilterableContentList_Count(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.Count;
+        }
+        private object get_26_FilterableContentList_FilteredCount(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.FilteredCount;
+        }
+        private object get_27_FilterableContentList_IsSynchronized(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.IsSynchronized;
+        }
+        private object get_28_FilterableContentList_SyncRoot(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.SyncRoot;
+        }
+        private object get_29_FilterableContentList_IsFixedSize(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.FilterableContentList)instance;
+            return that.IsFixedSize;
+        }
+        private object get_30_RateReminder_ReminderTrigger(object instance)
+        {
+            var that = (global::BasecodeLibrary.Controls.RateReminder)instance;
+            return that.ReminderTrigger;
+        }
+        private void set_30_RateReminder_ReminderTrigger(object instance, object Value)
+        {
+            var that = (global::BasecodeLibrary.Controls.RateReminder)instance;
+            that.ReminderTrigger = (global::System.Int32)Value;
+        }
+        private object get_31_YouTubeVideoPlayer_PlayerHeight(object instance)
         {
             var that = (global::BasecodeLibrary.Controls.YouTubeVideoPlayer)instance;
             return that.PlayerHeight;
         }
-        private void set_28_YouTubeVideoPlayer_PlayerHeight(object instance, object Value)
+        private void set_31_YouTubeVideoPlayer_PlayerHeight(object instance, object Value)
         {
             var that = (global::BasecodeLibrary.Controls.YouTubeVideoPlayer)instance;
             that.PlayerHeight = (global::System.Int32)Value;
         }
-        private object get_29_YouTubeVideoPlayer_PlayerWidth(object instance)
+        private object get_32_YouTubeVideoPlayer_PlayerWidth(object instance)
         {
             var that = (global::BasecodeLibrary.Controls.YouTubeVideoPlayer)instance;
             return that.PlayerWidth;
         }
-        private void set_29_YouTubeVideoPlayer_PlayerWidth(object instance, object Value)
+        private void set_32_YouTubeVideoPlayer_PlayerWidth(object instance, object Value)
         {
             var that = (global::BasecodeLibrary.Controls.YouTubeVideoPlayer)instance;
             that.PlayerWidth = (global::System.Int32)Value;
         }
-        private object get_30_YouTubeVideoPlayer_YouTubeSource(object instance)
+        private object get_33_YouTubeVideoPlayer_YouTubeSource(object instance)
         {
             var that = (global::BasecodeLibrary.Controls.YouTubeVideoPlayer)instance;
             return that.YouTubeSource;
         }
-        private void set_30_YouTubeVideoPlayer_YouTubeSource(object instance, object Value)
+        private void set_33_YouTubeVideoPlayer_YouTubeSource(object instance, object Value)
         {
             var that = (global::BasecodeLibrary.Controls.YouTubeVideoPlayer)instance;
             that.YouTubeSource = (global::System.String)Value;
+        }
+        private object get_34_ControlStoryboardAction_ControlStoryboardOption(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Media.ControlStoryboardAction)instance;
+            return that.ControlStoryboardOption;
+        }
+        private void set_34_ControlStoryboardAction_ControlStoryboardOption(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Media.ControlStoryboardAction)instance;
+            that.ControlStoryboardOption = (global::Microsoft.Xaml.Interactions.Media.ControlStoryboardOption)Value;
+        }
+        private object get_35_ControlStoryboardAction_Storyboard(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Media.ControlStoryboardAction)instance;
+            return that.Storyboard;
+        }
+        private void set_35_ControlStoryboardAction_Storyboard(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Media.ControlStoryboardAction)instance;
+            that.Storyboard = (global::Windows.UI.Xaml.Media.Animation.Storyboard)Value;
+        }
+        private object get_36_EventTriggerBehavior_Actions(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.Actions;
+        }
+        private object get_37_EventTriggerBehavior_EventName(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.EventName;
+        }
+        private void set_37_EventTriggerBehavior_EventName(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            that.EventName = (global::System.String)Value;
+        }
+        private object get_38_EventTriggerBehavior_SourceObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.SourceObject;
+        }
+        private void set_38_EventTriggerBehavior_SourceObject(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            that.SourceObject = (global::System.Object)Value;
+        }
+        private object get_39_EventTriggerBehavior_AssociatedObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.AssociatedObject;
+        }
+        private object get_40_GoToStateAction_UseTransitions(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
+            return that.UseTransitions;
+        }
+        private void set_40_GoToStateAction_UseTransitions(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
+            that.UseTransitions = (global::System.Boolean)Value;
+        }
+        private object get_41_GoToStateAction_StateName(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
+            return that.StateName;
+        }
+        private void set_41_GoToStateAction_StateName(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
+            that.StateName = (global::System.String)Value;
+        }
+        private object get_42_GoToStateAction_TargetObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
+            return that.TargetObject;
+        }
+        private void set_42_GoToStateAction_TargetObject(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.GoToStateAction)instance;
+            that.TargetObject = (global::Windows.UI.Xaml.FrameworkElement)Value;
+        }
+        private object get_43_IncrementalUpdateBehavior_Phase(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior)instance;
+            return that.Phase;
+        }
+        private void set_43_IncrementalUpdateBehavior_Phase(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior)instance;
+            that.Phase = (global::System.Int32)Value;
+        }
+        private object get_44_IncrementalUpdateBehavior_AssociatedObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior)instance;
+            return that.AssociatedObject;
+        }
+        private object get_45_InvokeCommandAction_InputConverterLanguage(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverterLanguage;
+        }
+        private void set_45_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverterLanguage = (global::System.String)Value;
+        }
+        private object get_46_InvokeCommandAction_InputConverterParameter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverterParameter;
+        }
+        private void set_46_InvokeCommandAction_InputConverterParameter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverterParameter = (global::System.Object)Value;
+        }
+        private object get_47_InvokeCommandAction_InputConverter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverter;
+        }
+        private void set_47_InvokeCommandAction_InputConverter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
+        }
+        private object get_48_InvokeCommandAction_CommandParameter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.CommandParameter;
+        }
+        private void set_48_InvokeCommandAction_CommandParameter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.CommandParameter = (global::System.Object)Value;
+        }
+        private object get_49_InvokeCommandAction_Command(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.Command;
+        }
+        private void set_49_InvokeCommandAction_Command(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.Command = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_50_NavigateToPageAction_TargetPage(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
+            return that.TargetPage;
+        }
+        private void set_50_NavigateToPageAction_TargetPage(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
+            that.TargetPage = (global::System.String)Value;
+        }
+        private object get_51_NavigateToPageAction_Parameter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
+            return that.Parameter;
+        }
+        private void set_51_NavigateToPageAction_Parameter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
+            that.Parameter = (global::System.Object)Value;
+        }
+        private object get_52_PlaySoundAction_Volume(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Media.PlaySoundAction)instance;
+            return that.Volume;
+        }
+        private void set_52_PlaySoundAction_Volume(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Media.PlaySoundAction)instance;
+            that.Volume = (global::System.Double)Value;
+        }
+        private object get_53_PlaySoundAction_Source(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Media.PlaySoundAction)instance;
+            return that.Source;
+        }
+        private void set_53_PlaySoundAction_Source(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Media.PlaySoundAction)instance;
+            that.Source = (global::System.String)Value;
+        }
+        private object get_54_Interaction_Behaviors(object instance)
+        {
+            return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
+        }
+        private void set_54_Interaction_Behaviors(object instance, object Value)
+        {
+            global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -650,180 +1134,347 @@ namespace BasecodeLibrary.BasecodeLibrary_XamlTypeInfo
                 xamlMember.Getter = get_2_ControlContainer_ControlContent;
                 xamlMember.Setter = set_2_ControlContainer_ControlContent;
                 break;
-            case "BasecodeLibrary.Controls.FilterableContentListPanel.IsCollapsed":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListPanel");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsCollapsed", "Boolean");
-                xamlMember.Getter = get_3_FilterableContentListPanel_IsCollapsed;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.FilterText":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "FilterText", "String");
-                xamlMember.Getter = get_4_FilterableContentList_FilterText;
-                xamlMember.Setter = set_4_FilterableContentList_FilterText;
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.FilteredItems":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "FilteredItems", "System.Collections.ObjectModel.ObservableCollection`1<BasecodeLibrary.Controls.FilterableContentListItem>");
-                xamlMember.Getter = get_5_FilterableContentList_FilteredItems;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentListItem.DataObject":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "DataObject", "Object");
-                xamlMember.Getter = get_6_FilterableContentListItem_DataObject;
-                xamlMember.Setter = set_6_FilterableContentListItem_DataObject;
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentListItem.ContentTitle":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ContentTitle", "String");
-                xamlMember.Getter = get_7_FilterableContentListItem_ContentTitle;
-                xamlMember.Setter = set_7_FilterableContentListItem_ContentTitle;
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentListItem.ContentShortDescription":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ContentShortDescription", "String");
-                xamlMember.Getter = get_8_FilterableContentListItem_ContentShortDescription;
-                xamlMember.Setter = set_8_FilterableContentListItem_ContentShortDescription;
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentListItem.ImageURI":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ImageURI", "System.Uri");
-                xamlMember.Getter = get_9_FilterableContentListItem_ImageURI;
-                xamlMember.Setter = set_9_FilterableContentListItem_ImageURI;
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentListItem.ImageDimensions":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ImageDimensions", "Windows.Foundation.Point");
-                xamlMember.Getter = get_10_FilterableContentListItem_ImageDimensions;
-                xamlMember.Setter = set_10_FilterableContentListItem_ImageDimensions;
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentListItem.HasDetails":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "HasDetails", "Boolean");
-                xamlMember.Getter = get_11_FilterableContentListItem_HasDetails;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentListItem.Details":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Details", "String");
-                xamlMember.Getter = get_12_FilterableContentListItem_Details;
-                xamlMember.Setter = set_12_FilterableContentListItem_Details;
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.ContentItems":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ContentItems", "System.Collections.ObjectModel.ObservableCollection`1<BasecodeLibrary.Controls.FilterableContentListItem>");
+            case "BasecodeLibrary.Controls.PopupBase.PopupTitle":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.PopupBase");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "PopupTitle", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_FilterableContentList_ContentItems;
-                xamlMember.Setter = set_13_FilterableContentList_ContentItems;
+                xamlMember.Getter = get_3_PopupBase_PopupTitle;
+                xamlMember.Setter = set_3_PopupBase_PopupTitle;
                 break;
-            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentItem":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentItem", "BasecodeLibrary.Controls.FilterableContentListItem");
+            case "BasecodeLibrary.Controls.PopupBase.PopupContent":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.PopupBase");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "PopupContent", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_FilterableContentList_SelectedContentItem;
-                xamlMember.Setter = set_14_FilterableContentList_SelectedContentItem;
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentObject":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentObject", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_FilterableContentList_SelectedContentObject;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentTitle":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentTitle", "String");
-                xamlMember.Getter = get_16_FilterableContentList_SelectedContentTitle;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentShortDescription":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentShortDescription", "String");
-                xamlMember.Getter = get_17_FilterableContentList_SelectedContentShortDescription;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentDescription":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentDescription", "String");
-                xamlMember.Getter = get_18_FilterableContentList_SelectedContentDescription;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentImageURL":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentImageURL", "System.Uri");
-                xamlMember.Getter = get_19_FilterableContentList_SelectedContentImageURL;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentImageDimensions":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentImageDimensions", "Windows.Foundation.Point");
-                xamlMember.Getter = get_20_FilterableContentList_SelectedContentImageDimensions;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.IsReadOnly":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsReadOnly", "Boolean");
-                xamlMember.Getter = get_21_FilterableContentList_IsReadOnly;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.Count":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Count", "Int32");
-                xamlMember.Getter = get_22_FilterableContentList_Count;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.FilteredCount":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "FilteredCount", "Int32");
-                xamlMember.Getter = get_23_FilterableContentList_FilteredCount;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.IsSynchronized":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsSynchronized", "Boolean");
-                xamlMember.Getter = get_24_FilterableContentList_IsSynchronized;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.SyncRoot":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SyncRoot", "Object");
-                xamlMember.Getter = get_25_FilterableContentList_SyncRoot;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "BasecodeLibrary.Controls.FilterableContentList.IsFixedSize":
-                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
-                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsFixedSize", "Boolean");
-                xamlMember.Getter = get_26_FilterableContentList_IsFixedSize;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Getter = get_4_PopupBase_PopupContent;
+                xamlMember.Setter = set_4_PopupBase_PopupContent;
                 break;
             case "BasecodeLibrary.Controls.ControlContainer.IsBusy":
                 userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.ControlContainer");
                 xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsBusy", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_ControlContainer_IsBusy;
-                xamlMember.Setter = set_27_ControlContainer_IsBusy;
+                xamlMember.Getter = get_5_ControlContainer_IsBusy;
+                xamlMember.Setter = set_5_ControlContainer_IsBusy;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentListPanel.IsCollapsed":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListPanel");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsCollapsed", "Boolean");
+                xamlMember.Getter = get_6_FilterableContentListPanel_IsCollapsed;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.FilterText":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "FilterText", "String");
+                xamlMember.Getter = get_7_FilterableContentList_FilterText;
+                xamlMember.Setter = set_7_FilterableContentList_FilterText;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.FilteredItems":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "FilteredItems", "System.Collections.ObjectModel.ObservableCollection`1<BasecodeLibrary.Controls.FilterableContentListItem>");
+                xamlMember.Getter = get_8_FilterableContentList_FilteredItems;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentListItem.DataObject":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "DataObject", "Object");
+                xamlMember.Getter = get_9_FilterableContentListItem_DataObject;
+                xamlMember.Setter = set_9_FilterableContentListItem_DataObject;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentListItem.ContentTitle":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ContentTitle", "String");
+                xamlMember.Getter = get_10_FilterableContentListItem_ContentTitle;
+                xamlMember.Setter = set_10_FilterableContentListItem_ContentTitle;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentListItem.ContentShortDescription":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ContentShortDescription", "String");
+                xamlMember.Getter = get_11_FilterableContentListItem_ContentShortDescription;
+                xamlMember.Setter = set_11_FilterableContentListItem_ContentShortDescription;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentListItem.ImageURI":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ImageURI", "System.Uri");
+                xamlMember.Getter = get_12_FilterableContentListItem_ImageURI;
+                xamlMember.Setter = set_12_FilterableContentListItem_ImageURI;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentListItem.ImageDimensions":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ImageDimensions", "Windows.Foundation.Point");
+                xamlMember.Getter = get_13_FilterableContentListItem_ImageDimensions;
+                xamlMember.Setter = set_13_FilterableContentListItem_ImageDimensions;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentListItem.HasDetails":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "HasDetails", "Boolean");
+                xamlMember.Getter = get_14_FilterableContentListItem_HasDetails;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentListItem.Details":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentListItem");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Details", "String");
+                xamlMember.Getter = get_15_FilterableContentListItem_Details;
+                xamlMember.Setter = set_15_FilterableContentListItem_Details;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.ContentItems":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ContentItems", "System.Collections.ObjectModel.ObservableCollection`1<BasecodeLibrary.Controls.FilterableContentListItem>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_16_FilterableContentList_ContentItems;
+                xamlMember.Setter = set_16_FilterableContentList_ContentItems;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentItem":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentItem", "BasecodeLibrary.Controls.FilterableContentListItem");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_17_FilterableContentList_SelectedContentItem;
+                xamlMember.Setter = set_17_FilterableContentList_SelectedContentItem;
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentObject":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentObject", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_18_FilterableContentList_SelectedContentObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentTitle":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentTitle", "String");
+                xamlMember.Getter = get_19_FilterableContentList_SelectedContentTitle;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentShortDescription":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentShortDescription", "String");
+                xamlMember.Getter = get_20_FilterableContentList_SelectedContentShortDescription;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentDescription":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentDescription", "String");
+                xamlMember.Getter = get_21_FilterableContentList_SelectedContentDescription;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentImageURL":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentImageURL", "System.Uri");
+                xamlMember.Getter = get_22_FilterableContentList_SelectedContentImageURL;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.SelectedContentImageDimensions":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SelectedContentImageDimensions", "Windows.Foundation.Point");
+                xamlMember.Getter = get_23_FilterableContentList_SelectedContentImageDimensions;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.IsReadOnly":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsReadOnly", "Boolean");
+                xamlMember.Getter = get_24_FilterableContentList_IsReadOnly;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.Count":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Count", "Int32");
+                xamlMember.Getter = get_25_FilterableContentList_Count;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.FilteredCount":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "FilteredCount", "Int32");
+                xamlMember.Getter = get_26_FilterableContentList_FilteredCount;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.IsSynchronized":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsSynchronized", "Boolean");
+                xamlMember.Getter = get_27_FilterableContentList_IsSynchronized;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.SyncRoot":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SyncRoot", "Object");
+                xamlMember.Getter = get_28_FilterableContentList_SyncRoot;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.FilterableContentList.IsFixedSize":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.FilterableContentList");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "IsFixedSize", "Boolean");
+                xamlMember.Getter = get_29_FilterableContentList_IsFixedSize;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "BasecodeLibrary.Controls.RateReminder.ReminderTrigger":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.RateReminder");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ReminderTrigger", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_30_RateReminder_ReminderTrigger;
+                xamlMember.Setter = set_30_RateReminder_ReminderTrigger;
                 break;
             case "BasecodeLibrary.Controls.YouTubeVideoPlayer.PlayerHeight":
                 userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.YouTubeVideoPlayer");
                 xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "PlayerHeight", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_YouTubeVideoPlayer_PlayerHeight;
-                xamlMember.Setter = set_28_YouTubeVideoPlayer_PlayerHeight;
+                xamlMember.Getter = get_31_YouTubeVideoPlayer_PlayerHeight;
+                xamlMember.Setter = set_31_YouTubeVideoPlayer_PlayerHeight;
                 break;
             case "BasecodeLibrary.Controls.YouTubeVideoPlayer.PlayerWidth":
                 userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.YouTubeVideoPlayer");
                 xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "PlayerWidth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_YouTubeVideoPlayer_PlayerWidth;
-                xamlMember.Setter = set_29_YouTubeVideoPlayer_PlayerWidth;
+                xamlMember.Getter = get_32_YouTubeVideoPlayer_PlayerWidth;
+                xamlMember.Setter = set_32_YouTubeVideoPlayer_PlayerWidth;
                 break;
             case "BasecodeLibrary.Controls.YouTubeVideoPlayer.YouTubeSource":
                 userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BasecodeLibrary.Controls.YouTubeVideoPlayer");
                 xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "YouTubeSource", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_YouTubeVideoPlayer_YouTubeSource;
-                xamlMember.Setter = set_30_YouTubeVideoPlayer_YouTubeSource;
+                xamlMember.Getter = get_33_YouTubeVideoPlayer_YouTubeSource;
+                xamlMember.Setter = set_33_YouTubeVideoPlayer_YouTubeSource;
+                break;
+            case "Microsoft.Xaml.Interactions.Media.ControlStoryboardAction.ControlStoryboardOption":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Media.ControlStoryboardAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "ControlStoryboardOption", "Microsoft.Xaml.Interactions.Media.ControlStoryboardOption");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_34_ControlStoryboardAction_ControlStoryboardOption;
+                xamlMember.Setter = set_34_ControlStoryboardAction_ControlStoryboardOption;
+                break;
+            case "Microsoft.Xaml.Interactions.Media.ControlStoryboardAction.Storyboard":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Media.ControlStoryboardAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Storyboard", "Windows.UI.Xaml.Media.Animation.Storyboard");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_35_ControlStoryboardAction_Storyboard;
+                xamlMember.Setter = set_35_ControlStoryboardAction_Storyboard;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_36_EventTriggerBehavior_Actions;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "EventName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_37_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_37_EventTriggerBehavior_EventName;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_38_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_38_EventTriggerBehavior_SourceObject;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.AssociatedObject":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_39_EventTriggerBehavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.GoToStateAction.UseTransitions":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.GoToStateAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "UseTransitions", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_40_GoToStateAction_UseTransitions;
+                xamlMember.Setter = set_40_GoToStateAction_UseTransitions;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.GoToStateAction.StateName":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.GoToStateAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "StateName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_41_GoToStateAction_StateName;
+                xamlMember.Setter = set_41_GoToStateAction_StateName;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.GoToStateAction.TargetObject":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.GoToStateAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "TargetObject", "Windows.UI.Xaml.FrameworkElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_42_GoToStateAction_TargetObject;
+                xamlMember.Setter = set_42_GoToStateAction_TargetObject;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior.Phase":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Phase", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_43_IncrementalUpdateBehavior_Phase;
+                xamlMember.Setter = set_43_IncrementalUpdateBehavior_Phase;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior.AssociatedObject":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_44_IncrementalUpdateBehavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterLanguage":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "InputConverterLanguage", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_45_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Setter = set_45_InvokeCommandAction_InputConverterLanguage;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterParameter":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "InputConverterParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_46_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Setter = set_46_InvokeCommandAction_InputConverterParameter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverter":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "InputConverter", "Windows.UI.Xaml.Data.IValueConverter");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_47_InvokeCommandAction_InputConverter;
+                xamlMember.Setter = set_47_InvokeCommandAction_InputConverter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.CommandParameter":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_48_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_48_InvokeCommandAction_CommandParameter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.Command":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_49_InvokeCommandAction_Command;
+                xamlMember.Setter = set_49_InvokeCommandAction_Command;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.NavigateToPageAction.TargetPage":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.NavigateToPageAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "TargetPage", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_50_NavigateToPageAction_TargetPage;
+                xamlMember.Setter = set_50_NavigateToPageAction_TargetPage;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.NavigateToPageAction.Parameter":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.NavigateToPageAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Parameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_51_NavigateToPageAction_Parameter;
+                xamlMember.Setter = set_51_NavigateToPageAction_Parameter;
+                break;
+            case "Microsoft.Xaml.Interactions.Media.PlaySoundAction.Volume":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Media.PlaySoundAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Volume", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_52_PlaySoundAction_Volume;
+                xamlMember.Setter = set_52_PlaySoundAction_Volume;
+                break;
+            case "Microsoft.Xaml.Interactions.Media.PlaySoundAction.Source":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Media.PlaySoundAction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Source", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_53_PlaySoundAction_Source;
+                xamlMember.Setter = set_53_PlaySoundAction_Source;
+                break;
+            case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
+                userType = (global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
+                xamlMember = new global::BasecodeLibrary.BasecodeLibrary_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
+                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
+                xamlMember.SetIsAttachable();
+                xamlMember.Getter = get_54_Interaction_Behaviors;
+                xamlMember.Setter = set_54_Interaction_Behaviors;
                 break;
             }
             return xamlMember;

@@ -26,7 +26,7 @@
 
                         <Border Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Black" Opacity=".5"/>
 
-                        <Border x:Name="PART_PopupContainer" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">
+                        <Border x:Name="PART_PopupContainer" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height=".33*"/>

@@ -115,6 +115,7 @@
       <DependentUpon>BaseCodePageContainer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\ControlContainer.cs" />
+    <Compile Include="Utilities\ModelBase.cs" />
     <Compile Include="Utilities\ViewModelBase.cs" />
     <Compile Include="Controls\FeedbackPopup.cs" />
     <Compile Include="Controls\FilterableContentList.cs" />
@@ -161,11 +162,6 @@
     <Compile Include="YouTube\YouTubeServices.cs" />
     <Compile Include="YouTube\YTEnums.cs" />
     <EmbeddedResource Include="Properties\BasecodeLibrary.rd.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">
-      <Name>Behaviors SDK %28XAML%29</Name>
-    </SDKReference>
   </ItemGroup>
   <ItemGroup>
     <Page Include="Controls\BaseCodePageContainer.xaml">

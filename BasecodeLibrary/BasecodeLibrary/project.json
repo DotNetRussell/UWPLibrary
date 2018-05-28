@@ -1,10 +1,11 @@
 ﻿{
   "dependencies": {
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Newtonsoft.Json": "8.0.3"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "6.1.4",
+    "Microsoft.Xaml.Behaviors.Uwp.Native": "1.0.4",
+    "Newtonsoft.Json": "11.0.2"
   },
   "frameworks": {
-    "uap10.0": {}
+    "uap10.0.10240": {}
   },
   "runtimes": {
     "win10-arm": {},

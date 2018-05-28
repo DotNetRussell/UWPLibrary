@@ -27,7 +27,7 @@
 
                         <Border Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Black" Opacity=".5"/>
 
-                        <Border x:Name="PART_FeedbackMessageContainer" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">
+                        <Border x:Name="PART_FeedbackMessageContainer" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                             <Grid>
                                 <Grid.Resources>
                                     <Style TargetType="Button">
@@ -75,7 +75,7 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
 
-                        <Border x:Name="PART_FeedbackMessageContainer"  HorizontalAlignment="Stretch"  Background="White">
+                        <Border x:Name="PART_FeedbackMessageContainer"  HorizontalAlignment="Stretch" >
 
                             <Grid>
                                 <Grid.RowDefinitions>

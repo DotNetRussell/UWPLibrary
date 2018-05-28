@@ -4,6 +4,9 @@
     xmlns:local="using:BasecodeLibrary.Themes">
 
     <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.RateReminder.xaml"/>
+        <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.PopupBase.xaml"/>
+        <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.FeedbackPopup.xaml"/>
         <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.FilterableImageWrapGrid.xaml"/>
         <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.YouTubeVideoPlayer.xaml"/>
         <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.FilterableContentList.xaml"/>
