@@ -1,5 +1,5 @@
 #UWPLibrary - BasecodeLibrary
-UWP Controls that I've written and open sourced
+UWP Controls that I've written and open sourced.
 
 This library has a ton of useful UWP controls and utilities. Almost all of the controls are lookless, meaning if you don't like how they look then you can easily restyle them without losing functionality!
 
