@@ -68,38 +68,69 @@ namespace BasecodeLibrary.Controls
 
                     innerContainer.Children.Add(label);
 
-                    switch (item.SettingType)
+                    if (item is SettingItemSelector)
                     {
-                        case (SettingsType._int):
-                        case (SettingsType._double):
-                        case (SettingsType._string):
-                            TextBox input = new TextBox();
-                            Binding dataBinding = new Binding();
-                            dataBinding.Mode = BindingMode.TwoWay;
-                            dataBinding.Path = new PropertyPath(item.BindingPath);
-                            input.SetBinding(TextBox.TextProperty, dataBinding);
-                            Grid.SetColumn(input, 1);
-                            innerContainer.Children.Add(input);
-                            break;
-                        case (SettingsType._bool):
-                            CheckBox checkBox = new CheckBox();
-                            Binding checkboxBinding = new Binding();
-                            checkboxBinding.Mode = BindingMode.TwoWay;
-                            checkboxBinding.Path = new PropertyPath(item.BindingPath);
-                            checkBox.SetBinding(CheckBox.IsCheckedProperty, checkboxBinding);
-                            Grid.SetColumn(checkBox, 1);
-                            innerContainer.Children.Add(checkBox);
-                            break;
-                        default:
-                            TextBox defaultInput = new TextBox();
-                            Binding defaultBinding = new Binding();
-                            defaultBinding.Mode = BindingMode.TwoWay;
-                            defaultBinding.Path = new PropertyPath(item.BindingPath);
-                            defaultInput.SetBinding(TextBox.TextProperty, defaultBinding);
-                            Grid.SetColumn(defaultInput, 1);
-                            innerContainer.Children.Add(defaultInput);
-                            break;
+                        SettingItemSelector selector = item as SettingItemSelector;
+
+                        ComboBox comboBox = new ComboBox();
+                        foreach(string selection in selector.Items)
+                        {
+                            comboBox.Items.Add(selection);
+                        }
+                        comboBox.SelectedItem = comboBox.Items.FirstOrDefault();
+
+                        Binding comboBinding = new Binding();
+                        comboBinding.Mode = BindingMode.TwoWay;
+                        comboBinding.Path = new PropertyPath(selector.BindingPath);
+                        comboBox.SetBinding(ComboBox.SelectedItemProperty, comboBinding);
+                        Grid.SetColumn(comboBox, 1);
+                        innerContainer.Children.Add(comboBox);
                     }
+                    else
+                    {
+                        switch (item.SettingType)
+                        {
+                            case (SettingsType._int):
+                            case (SettingsType._double):
+                            case (SettingsType._string):
+                                TextBox input = new TextBox();
+                                Binding dataBinding = new Binding();
+                                dataBinding.Mode = BindingMode.TwoWay;
+                                dataBinding.Path = new PropertyPath(item.BindingPath);
+                                input.SetBinding(TextBox.TextProperty, dataBinding);
+                                Grid.SetColumn(input, 1);
+                                innerContainer.Children.Add(input);
+                                break;
+                            case (SettingsType._bool):
+                                CheckBox checkBox = new CheckBox();
+                                Binding checkboxBinding = new Binding();
+                                checkboxBinding.Mode = BindingMode.TwoWay;
+                                checkboxBinding.Path = new PropertyPath(item.BindingPath);
+                                checkBox.SetBinding(CheckBox.IsCheckedProperty, checkboxBinding);
+                                Grid.SetColumn(checkBox, 1);
+                                innerContainer.Children.Add(checkBox);
+                                break;
+                            case (SettingsType._password):
+                                PasswordBox passwordBox = new PasswordBox();
+                                Binding passwordBinding = new Binding();
+                                passwordBinding.Mode = BindingMode.TwoWay;
+                                passwordBinding.Path = new PropertyPath(item.BindingPath);
+                                passwordBox.SetBinding(PasswordBox.PasswordProperty, passwordBinding);
+                                Grid.SetColumn(passwordBox, 1);
+                                innerContainer.Children.Add(passwordBox);
+                                break;
+                            default:
+                                TextBox defaultInput = new TextBox();
+                                Binding defaultBinding = new Binding();
+                                defaultBinding.Mode = BindingMode.TwoWay;
+                                defaultBinding.Path = new PropertyPath(item.BindingPath);
+                                defaultInput.SetBinding(TextBox.TextProperty, defaultBinding);
+                                Grid.SetColumn(defaultInput, 1);
+                                innerContainer.Children.Add(defaultInput);
+                                break;
+                        }
+                    }
+                    
                     container.Children.Add(innerContainer);
                 }
 

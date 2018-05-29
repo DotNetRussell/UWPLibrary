@@ -13,7 +13,8 @@ namespace BasecodeLibrary.Enums
             _string = 0,
             _bool = 1,
             _int = 2,
-            _double = 3
+            _double = 3,
+            _password = 4
         }
     }
 }

@@ -116,6 +116,7 @@
     </Compile>
     <Compile Include="Controls\ControlContainer.cs" />
     <Compile Include="Controls\SettingItem.cs" />
+    <Compile Include="Controls\SettingItemSelector.cs" />
     <Compile Include="Controls\SettingsFlyout.cs" />
     <Compile Include="Enums\BasecodeEnums.cs" />
     <Compile Include="Utilities\ModelBase.cs" />

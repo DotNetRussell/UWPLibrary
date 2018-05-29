@@ -10,8 +10,8 @@ namespace BasecodeLibrary.Utilities
     public class CommandHandler : ICommand
     {
         private Action _action;
-        private bool _canExecute;
-        public CommandHandler(Action action, bool canExecute)
+        private Func<bool> _canExecute;
+        public CommandHandler(Action action, Func<bool> canExecute)
         {
             _action = action;
             _canExecute = canExecute;
@@ -19,7 +19,7 @@ namespace BasecodeLibrary.Utilities
 
         public bool CanExecute(object parameter)
         {
-            return _canExecute;
+            return _canExecute();
         }
 
         public event EventHandler CanExecuteChanged;
