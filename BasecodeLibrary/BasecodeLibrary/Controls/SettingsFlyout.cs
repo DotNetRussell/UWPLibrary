@@ -33,10 +33,7 @@ namespace BasecodeLibrary.Controls
 
         //public static readonly DependencyProperty ButtonsProperty =
         //    DependencyProperty.RegisterAttached("Buttons", typeof(List<Button>), typeof(SettingsFlyout), new PropertyMetadata(null));
-
-
-
-
+        
         public SettingsFlyout()
         {
             this.Opening += GenerateSettingsMenu;
@@ -119,7 +116,5 @@ namespace BasecodeLibrary.Controls
                 this.Content = container;
             }
         }
-
     }
-
 }
