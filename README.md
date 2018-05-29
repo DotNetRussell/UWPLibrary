@@ -38,4 +38,7 @@ All of these controls support both desktop and mobile platforms naitively curren
       <li>Save/Get/Exists Object in storage</li>
       </ul>
   </li>
+  <li><b>ViewModelBase</b> - A base class for viewmodels with INotifyPropertyChanged implemented</li>
+  <li><b>ModelBase</b> - A base class for models with INotifyPropertyChanged implemented</li>
+  <li><b>CommandHandler</b> - An ICommand implementation perfect for command bindings</li>
 </ul>
