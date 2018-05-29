@@ -10,25 +10,15 @@
    
 
     <Grid x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-
-        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Visible">
-            <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
-            <Button Click="Button_Click">Show Popup</Button>
-            <Button Click="Button_Click_1">Leave Feedback!</Button>
-            <Button Click="Button_Click_2">Rate App</Button>
-            </StackPanel>
-            <TextBlock FontSize="50" HorizontalAlignment="Center" 
-                       Text="{Binding ElementName=filteredList, Path=SelectedContentTitle}" />
-            <TextBlock FontSize="15" HorizontalAlignment="Center" 
-                       Text="{Binding ElementName=filteredList, Path=SelectedContentImageURL}" />
-            <basecodelib:FilterableContentList 
-                x:Name="filteredList"
-                ContentItems="{Binding items}"/>
-        </StackPanel>
-        <basecodelib:PopupBase x:Name="popup" />
-        <basecodelib:FeedbackPopup x:Name="feedback" />
-        <basecodelib:RateReminder x:Name="rate" />
+        <Button Content="Click me!">
+            <Button.Flyout>
+                <basecodelib:SettingsFlyout>                    
+                    <basecodelib:SettingItem Label="First Setting" SettingType="_string" BindingPath="FieldOne" />                    
+                    <basecodelib:SettingItem Label="Second Setting" SettingType="_bool" BindingPath="FieldTwo" />
+                    <basecodelib:SettingItem Label="Third Setting" SettingType="_double" BindingPath="FieldThree" />
+                </basecodelib:SettingsFlyout>
+            </Button.Flyout>
+        </Button>
 
     </Grid>
 </Page>

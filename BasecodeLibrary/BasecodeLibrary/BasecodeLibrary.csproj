@@ -115,6 +115,9 @@
       <DependentUpon>BaseCodePageContainer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\ControlContainer.cs" />
+    <Compile Include="Controls\SettingItem.cs" />
+    <Compile Include="Controls\SettingsFlyout.cs" />
+    <Compile Include="Enums\BasecodeEnums.cs" />
     <Compile Include="Utilities\ModelBase.cs" />
     <Compile Include="Utilities\ViewModelBase.cs" />
     <Compile Include="Controls\FeedbackPopup.cs" />
