@@ -25,15 +25,16 @@ namespace BasecodeLibrary.Controls
         public static readonly DependencyProperty ItemsProperty =
             DependencyProperty.Register("Items", typeof(List<SettingItem>), typeof(SettingsFlyout), new PropertyMetadata(new List<SettingItem>()));
 
-        //public List<Button> Buttons
-        //{
-        //    get { return (List<Button>)GetValue(ButtonsProperty); }
-        //    set { SetValue(ButtonsProperty, value); }
-        //}
+        public List<Button> Buttons
+        {
+            get { return (List<Button>)GetValue(ButtonsProperty); }
+            set { SetValue(ButtonsProperty, value); }
+        }
 
-        //public static readonly DependencyProperty ButtonsProperty =
-        //    DependencyProperty.RegisterAttached("Buttons", typeof(List<Button>), typeof(SettingsFlyout), new PropertyMetadata(null));
-        
+        public static readonly DependencyProperty ButtonsProperty =
+            DependencyProperty.Register("Buttons", typeof(List<Button>), typeof(SettingsFlyout), new PropertyMetadata(new List<Button>()));
+
+
         public SettingsFlyout()
         {
             this.Opening += GenerateSettingsMenu;
@@ -139,15 +140,17 @@ namespace BasecodeLibrary.Controls
                     container.Children.Add(innerContainer);
                 }
 
-                //if(Buttons != null)
-                //{
-                //    StackPanel buttonsContainer = new StackPanel();
-                //    foreach (Button button in Buttons)
-                //    {
-                //        buttonsContainer.Children.Add(button);
-                //    }
-                //    container.Children.Add(buttonsContainer);
-                //}
+                if (Buttons != null)
+                {
+                    StackPanel buttonsContainer = new StackPanel();
+                    buttonsContainer.Padding = new Thickness(5);
+                    buttonsContainer.Orientation = Orientation.Horizontal;
+                    foreach (Button button in Buttons)
+                    {
+                        buttonsContainer.Children.Add(button);
+                    }
+                    container.Children.Add(buttonsContainer);
+                }
 
                 this.Content = container;
             }
