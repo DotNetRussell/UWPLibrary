@@ -79,6 +79,7 @@ namespace BasecodeLibrary.Controls
                         }
                         comboBox.SelectedItem = comboBox.Items.FirstOrDefault();
 
+                        ToolTipService.SetToolTip(comboBox, item.ToolTip);
                         Binding comboBinding = new Binding();
                         comboBinding.Mode = BindingMode.TwoWay;
                         comboBinding.Path = new PropertyPath(selector.BindingPath);
@@ -94,6 +95,7 @@ namespace BasecodeLibrary.Controls
                             case (SettingsType._double):
                             case (SettingsType._string):
                                 TextBox input = new TextBox();
+                                ToolTipService.SetToolTip(input, item.ToolTip);
                                 Binding dataBinding = new Binding();
                                 dataBinding.Mode = BindingMode.TwoWay;
                                 dataBinding.Path = new PropertyPath(item.BindingPath);
@@ -103,6 +105,7 @@ namespace BasecodeLibrary.Controls
                                 break;
                             case (SettingsType._bool):
                                 CheckBox checkBox = new CheckBox();
+                                ToolTipService.SetToolTip(checkBox, item.ToolTip);
                                 Binding checkboxBinding = new Binding();
                                 checkboxBinding.Mode = BindingMode.TwoWay;
                                 checkboxBinding.Path = new PropertyPath(item.BindingPath);
@@ -112,6 +115,7 @@ namespace BasecodeLibrary.Controls
                                 break;
                             case (SettingsType._password):
                                 PasswordBox passwordBox = new PasswordBox();
+                                ToolTipService.SetToolTip(passwordBox, item.ToolTip);
                                 Binding passwordBinding = new Binding();
                                 passwordBinding.Mode = BindingMode.TwoWay;
                                 passwordBinding.Path = new PropertyPath(item.BindingPath);
@@ -121,6 +125,7 @@ namespace BasecodeLibrary.Controls
                                 break;
                             default:
                                 TextBox defaultInput = new TextBox();
+                                ToolTipService.SetToolTip(defaultInput, item.ToolTip);
                                 Binding defaultBinding = new Binding();
                                 defaultBinding.Mode = BindingMode.TwoWay;
                                 defaultBinding.Path = new PropertyPath(item.BindingPath);

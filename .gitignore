@@ -1,2 +1,4 @@
 BasecodeLibrary/BasecodeLibrary/obj/*
 BasecodeLibrary/BasecodeLibrary/bin/*
+/BasecodeLibrary/.vs/BasecodeLibrary
+/SandboxUWPApp/.vs/SandboxUWPApp

@@ -48,6 +48,15 @@ namespace BasecodeLibrary.Controls
 
         public static readonly DependencyProperty BindingPathProperty =
             DependencyProperty.Register("BindingPath", typeof(string), typeof(SettingItem), new PropertyMetadata(String.Empty));
+        
+        public string ToolTip
+        {
+            get { return (string)GetValue(ToolTipProperty); }
+            set { SetValue(ToolTipProperty, value); }
+        }
+
+        public static readonly DependencyProperty ToolTipProperty =
+            DependencyProperty.Register("ToolTip", typeof(string), typeof(SettingItem), new PropertyMetadata(String.Empty));
 
     }
 }
