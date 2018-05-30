@@ -35,6 +35,8 @@ namespace BasecodeLibrary.Controls
             DependencyProperty.Register("Buttons", typeof(List<Button>), typeof(SettingsFlyout), new PropertyMetadata(new List<Button>()));
 
 
+        public bool wasBuilt { get; set; }
+
         public SettingsFlyout()
         {
             this.Opening += GenerateSettingsMenu;
@@ -42,6 +44,11 @@ namespace BasecodeLibrary.Controls
 
         private void GenerateSettingsMenu(object sender, object e)
         {
+            if (wasBuilt)
+            {
+                return;
+            }
+
             BuildSettingsMenu();
         }
 
@@ -54,6 +61,7 @@ namespace BasecodeLibrary.Controls
         {
             if (Items != null)
             {
+                wasBuilt = true;
                 StackPanel container = new StackPanel();
                 container.Orientation = Orientation.Vertical;
                 foreach (SettingItem item in Items)
