@@ -11,7 +11,7 @@
     <AssemblyName>BasecodeLibrary</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -20,6 +20,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -106,10 +107,6 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
-  <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <None Include="project.json" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\BaseCodePageContainer.xaml.cs">
       <DependentUpon>BaseCodePageContainer.xaml</DependentUpon>
@@ -213,7 +210,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Native">
+      <Version>1.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
