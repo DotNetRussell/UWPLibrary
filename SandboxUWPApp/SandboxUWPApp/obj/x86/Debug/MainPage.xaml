@@ -9,7 +9,7 @@
     mc:Ignorable="d">
    
 
-    <Grid x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:ConnectionId='1' x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button Content="Click me!">
             <Button.Flyout>
                 <basecodelib:SettingsFlyout>                    
@@ -28,3 +28,4 @@
 
     </Grid>
 </Page>
+

@@ -21,6 +21,12 @@ namespace BasecodeLibrary.Utilities
                 + @"\" + value.objectName + ".russ", FileMode.OpenOrCreate));
         }
 
+        public static void SaveObject<T>(Object value, string fileName)
+        {
+            Serialize<T>(value, new FileStream(ApplicationData.Current.RoamingFolder.Path 
+                + @"\" + fileName + ".russ", FileMode.OpenOrCreate));
+        }
+
         public static void OverWriteSaveObject(ISerializeableObject value)
         {
             Serialize(value, new FileStream(ApplicationData.Current.RoamingFolder.Path
@@ -30,7 +36,7 @@ namespace BasecodeLibrary.Utilities
         public static Object GetObject(string objectName, Type targetType)
         {
             return Deserialize(new FileStream(ApplicationData.Current.RoamingFolder.Path
-                 + @"\" + objectName + ".russ", FileMode.OpenOrCreate), targetType);
+                 + @"\" + objectName + ".russ", FileMode.Open), targetType);
         }
 
         public static bool SaveObjectExists(string objectName, Type targetType)
@@ -54,6 +60,21 @@ namespace BasecodeLibrary.Utilities
             try
             {
                 DataContractSerializer serializer = objectToSerialize.GetSerializer();
+                serializer.WriteObject(stream, objectToSerialize);
+                stream.Dispose();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Unable to Serialize");
+                Debug.WriteLine(ex.Message);
+            }
+        }
+
+        private static void Serialize<T>(Object objectToSerialize, FileStream stream)
+        {
+            try
+            {
+                DataContractSerializer serializer = new DataContractSerializer(typeof(T));
                 serializer.WriteObject(stream, objectToSerialize);
                 stream.Dispose();
             }

@@ -116,7 +116,9 @@
     <Compile Include="Controls\SettingItemSelector.cs" />
     <Compile Include="Controls\SettingsFlyout.cs" />
     <Compile Include="Enums\BasecodeEnums.cs" />
+    <Compile Include="Interfaces\ISerializableEnumerable.cs" />
     <Compile Include="Utilities\ModelBase.cs" />
+    <Compile Include="Utilities\SerializableEnumerable.cs" />
     <Compile Include="Utilities\ViewModelBase.cs" />
     <Compile Include="Controls\FeedbackPopup.cs" />
     <Compile Include="Controls\FilterableContentList.cs" />
