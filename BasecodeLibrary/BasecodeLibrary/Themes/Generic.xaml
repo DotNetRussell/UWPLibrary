@@ -11,5 +11,9 @@
         <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.YouTubeVideoPlayer.xaml"/>
         <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.FilterableContentList.xaml"/>
         <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.FilterableContentListPanel.xaml"/>
+        <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.ContextRibbon.xaml"/>
+        <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.ContextRibbonItem.xaml"/>
+        <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.ContextRibbonMenu.xaml"/>
+        <ResourceDictionary Source="ms-appx:///BasecodeLibrary/Themes/Generic.ContextRibbonMenuItem.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

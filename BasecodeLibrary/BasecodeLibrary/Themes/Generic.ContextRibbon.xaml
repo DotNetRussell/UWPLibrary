@@ -1,0 +1,31 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:controls="using:BasecodeLibrary.Controls"
+    xmlns:selectors="using:BasecodeLibrary.Controls.TemplateSelector"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BasecodeLibrary.Themes">
+
+    <DataTemplate x:Key="RibbonItemTemplate" >
+        <controls:ContextRibbonItem />
+    </DataTemplate>
+
+    <DataTemplate x:Key="RibbonMenuTemplate">
+        <controls:ContextRibbonMenu />
+    </DataTemplate>
+    
+    <selectors:RibbonControlDataTemplateSelector 
+        x:Name="DataTemplateSelector" 
+        ContextRibbonItemDataTemplate="{StaticResource RibbonItemTemplate}" 
+        ContextRibbonMenuDataTemplate="{StaticResource RibbonMenuTemplate}" />
+
+    <Style TargetType="controls:ContextRibbon">
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel Margin="10" Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemTemplateSelector" Value="{StaticResource ResourceKey=DataTemplateSelector}" />
+    </Style>
+</ResourceDictionary>

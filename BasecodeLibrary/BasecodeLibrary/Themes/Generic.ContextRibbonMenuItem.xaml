@@ -1,0 +1,29 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:controls="using:BasecodeLibrary.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BasecodeLibrary.Themes">
+
+    <Style TargetType="controls:ContextRibbonMenuItem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Button
+                        ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ButtonToolTip}"
+                        Command="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Command}">
+                        <StackPanel Orientation="Horizontal" MinWidth="100">
+                            <SymbolIcon                                
+                                Margin="0,0,10,0"
+                                Symbol="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ButtonIcon}" />
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="10"
+                                Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ButtonText}" />
+                        </StackPanel>
+                    </Button>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -19,14 +19,21 @@ namespace BasecodeLibrary.Utilities
 
         public bool CanExecute(object parameter)
         {
-            return _canExecute();
+            if(_canExecute != null)
+            {
+                return _canExecute();
+            }
+            else
+            {
+                return true;
+            }
         }
 
         public event EventHandler CanExecuteChanged;
 
         public void Execute(object parameter)
         {
-            _action();
+            _action?.Invoke();
         }
     }
 }
