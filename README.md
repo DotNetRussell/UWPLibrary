@@ -22,6 +22,10 @@ All of these controls support both desktop and mobile platforms naitively curren
   <li><b>SettingItemSelector</b> - A settings element intended to be used inside the settings flyout menu that displays a combobox</li>
   <li><b>RateReminder</b> - (<a target="_blank" href="http://i.imgur.com/is0qNFa.mp4">demo here</a>) Prompts the user to review the application or email you. It has cusom title and content capabilties</li>
   <li><b>YouTubeVideoPlayer</b> - (<a target="_blank" href="http://i.imgur.com/EvHpw1a.mp4">demo here</a>) This UWP video player is made specifically to support youtube videos. It's current version supports full screen video</li> 
+  <li><b>ContextRibbon</b> - This is a simple UWP Ribbon control. It will create  a horizontal row of ribbon items or ribbon menus</li>
+  <li><b>ContextRibbonItem</b> - A simple context ribbon button. Able to set the tooltip, icon and text as well as the command binding</li>
+  <li><b>ContextRibbonMenu</b> - A drop down of ContextRibbonMenuItem buttons</li>
+  <li><b>ContextRibbonMenuItem</b> - The button that goes inside the ContextRibbonMenu</li>
 </ul>
 
 
