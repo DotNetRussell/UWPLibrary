@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Foundation;
 using Windows.Storage;
 
 namespace BasecodeLibrary.Utilities
@@ -114,18 +115,18 @@ namespace BasecodeLibrary.Utilities
         {
             return await ApplicationData.Current.LocalFolder.TryGetItemAsync(filename) != null;
         }
-
+                
         /// <summary>
         /// Serializes an object to json and saves it to disk with the filename passed in. 
         /// </summary>
         /// <param name="fileName">The file name (and extension if you want) of the file you wish to save</param>
         /// <param name="serializeableObject">The object you wish to serialze and save to disk</param>
-        public static async void SaveJsonFile(string fileName, object serializeableObject)
+        public static async Task<IAsyncAction> SaveJsonFile(string fileName, object serializeableObject)
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
             StorageFile sampleFile = await storageFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
             string settingsJson = JsonConvert.SerializeObject(serializeableObject);
-            await FileIO.WriteTextAsync(sampleFile, settingsJson);
+            return FileIO.WriteTextAsync(sampleFile, settingsJson);
         }
 
         /// <summary>

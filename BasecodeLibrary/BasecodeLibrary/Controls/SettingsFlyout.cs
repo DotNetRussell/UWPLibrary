@@ -41,7 +41,7 @@ namespace BasecodeLibrary.Controls
         {
             this.Opening += GenerateSettingsMenu;
         }
-
+        
         private void GenerateSettingsMenu(object sender, object e)
         {
             if (wasBuilt)
@@ -59,7 +59,7 @@ namespace BasecodeLibrary.Controls
         // So, the only alternative here is to manually generate the UI and jam it into the flyout control's content.
         private void BuildSettingsMenu()
         {
-            if (Items != null)
+            if (Items != null )
             {
                 wasBuilt = true;
                 StackPanel container = new StackPanel();

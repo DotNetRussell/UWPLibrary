@@ -11,7 +11,7 @@ namespace BasecodeLibrary.Utilities
     {
         private Action _action;
         private Func<bool> _canExecute;
-        public CommandHandler(Action action, Func<bool> canExecute)
+        public CommandHandler(Action action, Func<bool> canExecute = null)
         {
             _action = action;
             _canExecute = canExecute;

@@ -10,16 +10,15 @@
                 <ControlTemplate>
                     <Grid x:Name="ContainerGrid">
                         <Grid.Resources>
-                            <Storyboard x:Name="PART_FadeInAnimation">
+                            <!--<Storyboard x:Name="PART_FadeInAnimation">
                                 <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ContainerGrid">
                                     <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                                     <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
                                 </DoubleAnimationUsingKeyFrames>
-                            </Storyboard>
+                            </Storyboard>-->
 
                             <Style TargetType="Button">
                                 <Style.Setters>
-                                    <Setter Property="Foreground" Value="{StaticResource ButtonBorderThemeBrush}" />
                                     <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderThemeBrush}"/>
                                     <Setter Property="Template">
                                         <Setter.Value>
@@ -99,9 +98,9 @@
                         </Grid.Resources>
 
                         <Grid.RowDefinitions>
-                            <RowDefinition Height=".30*"/>
-                            <RowDefinition Height=".40*"/>
-                            <RowDefinition Height=".30*"/>
+                            <RowDefinition Height=".3*"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
 
                         <Border Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Black" Opacity=".5"/>
@@ -109,24 +108,23 @@
                         <Border x:Name="PART_FeedbackMessageContainer" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{StaticResource FlyoutBackgroundThemeBrush}" BorderBrush="{StaticResource FlyoutBorderThemeBrush}" BorderThickness="1" >
                             <Grid>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height=".33*"/>
-                                    <RowDefinition Height=".33*"/>
-                                    <RowDefinition Height=".33*"/>
+                                    <RowDefinition Height=".25*"/>
+                                    <RowDefinition Height=".5*"/>
+                                    <RowDefinition Height=".25*"/>
                                 </Grid.RowDefinitions>
                                 <TextBlock 
                                     Grid.Row="0" 
                                     x:Name="PART_FeedbackTitle" 
                                     Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=PopupTitle}" 
                                     FontSize="30" 
-                                    FontWeight="Bold" 
-                                    Padding="10"/>
-                                <TextBlock Grid.Row="1" Margin="15,5,5,5" FontSize="20" Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=PopupContent}" x:Name="PART_FeedbackContent"/>
-                                <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5,5,5,5" VerticalAlignment="Bottom">
+                                    FontWeight="Bold" />
+                                <TextBlock Grid.Row="1" Margin="15,5,5,5" FontSize="25" Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=PopupContent}" x:Name="PART_FeedbackContent"/>
+                                <StackPanel Orientation="Vertical" Grid.Row="2"  VerticalAlignment="Bottom">
                                     <CheckBox Foreground="Red" BorderBrush="Red" x:Name="PART_StopReminding" Content="Don't Ask Again" IsChecked="False"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <Button x:Name="PART_RateAppButton" Content="I love the app!"  Margin="5,5,5,5" Width="200"/>
-                                        <Button x:Name="PART_HateAppButton" Content="I hate the app!" Margin="5,5,5,5" Width="200"/>
-                                        <Button x:Name="PART_CloseButton" Content="Close"  Margin="5,5,5,5" Width="200"/>
+                                        <Button x:Name="PART_RateAppButton" Content="I love the app!"  Width="200"/>
+                                        <Button x:Name="PART_HateAppButton" Content="I hate the app!"  Width="200"/>
+                                        <Button x:Name="PART_CloseButton" Content="Close" Width="200"/>
                                     </StackPanel>
                                 </StackPanel>
                             </Grid>
