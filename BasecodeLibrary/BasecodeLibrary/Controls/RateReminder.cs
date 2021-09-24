@@ -60,6 +60,26 @@ namespace BasecodeLibrary.Controls
             CheckRateReminder();
         }
 
+        ~RateReminder()
+        {
+            if (_partRateAppButton != null)
+            {
+                _partRateAppButton.Click -= OnPartRateAppButtonClick;
+            }
+            if (_partHateAppBuston != null)
+            {
+                _partHateAppBuston.Click -= OnPartHateAppButtonClick;
+            }
+            if (_partCloseButton != null)
+            {
+                _partCloseButton.Click -= OnPartCloseButtonClick;
+            }
+            if (_partStopRemindingCheckBox != null)
+            {
+                _partStopRemindingCheckBox.Checked -= OnPartStopRemindingCheckBoxCheck;
+            }
+        }
+
         protected override void OnApplyTemplate()
         {
             _partRateAppButton = GetTemplateChild("PART_RateAppButton") as Button;
@@ -72,44 +92,53 @@ namespace BasecodeLibrary.Controls
             base.OnApplyTemplate();
         }
 
+
+
         private void PostApplyTemplate()
         {
             if(_partRateAppButton != null)
             {
-                _partRateAppButton.Click += async (s, a) => 
-                {
-                    await Launcher.LaunchUriAsync(new Uri(string.Format("ms-windows-store:REVIEW?PFN={0}", 
-                        Windows.ApplicationModel.Package.Current.Id.FamilyName)));
-                };
+                _partRateAppButton.Click += OnPartRateAppButtonClick;
             }
             if(_partHateAppBuston != null)
             {
-                _partHateAppBuston.Click += async (s, a) => 
-                {
-                    EmailMessage emailMessage = new EmailMessage()
-                    {
-                        Subject = "App Feedback " + Package.Current.DisplayName + " " + ApplicationServices.CurrentDevice,
-                    };
-
-                    emailMessage.To.Add(new EmailRecipient() { Address = "admin@DotNetRussell.com" });
-                    await EmailManager.ShowComposeNewEmailAsync(emailMessage);
-                };
+                _partHateAppBuston.Click += OnPartHateAppButtonClick;
             }
             if (_partCloseButton != null)
             {
-                _partCloseButton.Click += (s, a) => 
-                {
-                    HidePopup();
-                };
+                _partCloseButton.Click += OnPartCloseButtonClick;
             }
             if (_partStopRemindingCheckBox != null)
             {
-                _partStopRemindingCheckBox.Checked += (s, a) => 
-                {
-                    IsDontShowChecked = (bool)_partStopRemindingCheckBox.IsChecked;
-                    UpdateRateReminder(IsDontShowChecked);
-                };
+                _partStopRemindingCheckBox.Checked += OnPartStopRemindingCheckBoxCheck;
             }
+        }
+
+        private void OnPartStopRemindingCheckBoxCheck(object sender, RoutedEventArgs e)
+        {
+            IsDontShowChecked = (bool)_partStopRemindingCheckBox.IsChecked;
+            UpdateRateReminder(IsDontShowChecked);
+        }
+
+        private void OnPartCloseButtonClick(object sender, RoutedEventArgs e)
+        {
+            HidePopup();
+        }
+
+        private async void OnPartHateAppButtonClick(object sender, RoutedEventArgs e)
+        {
+            EmailMessage emailMessage = new EmailMessage()
+            {
+                Subject = "App Feedback " + Package.Current.DisplayName + " " + ApplicationServices.CurrentDevice,
+            };
+
+            emailMessage.To.Add(new EmailRecipient() { Address = "admin@DotNetRussell.com" });
+            await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+        }
+
+        private async void OnPartRateAppButtonClick(object sender, RoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri(string.Format("ms-windows-store:REVIEW?PFN={0}", Package.Current.Id.FamilyName)));
         }
 
         private void CheckRateReminder()

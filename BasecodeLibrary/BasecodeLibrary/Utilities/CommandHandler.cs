@@ -11,6 +11,8 @@ namespace BasecodeLibrary.Utilities
     {
         private Action _action;
         private Func<bool> _canExecute;
+        public event EventHandler CanExecuteChanged;
+
         public CommandHandler(Action action, Func<bool> canExecute = null)
         {
             _action = action;
@@ -28,8 +30,6 @@ namespace BasecodeLibrary.Utilities
                 return true;
             }
         }
-
-        public event EventHandler CanExecuteChanged;
 
         public void Execute(object parameter)
         {
